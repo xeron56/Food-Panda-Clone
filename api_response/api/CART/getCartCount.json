@@ -1,0 +1,10 @@
+//GET
+//https://multi-restaurants.smartersvision.com/api/carts/count?api_token=huy0yC9vAOan0jtxtuvVaZbg3tBKS8d5UXwJ964mE1OaLQjWL3O0S88Xo0Gm&search=user_id:54&searchFields=user_id:=
+//GETING ALL AMOUNT OF CART
+
+
+{
+    "success": true,
+    "data": 2,
+    "message": "Count retrieved successfully"
+}

@@ -1,0 +1,199 @@
+
+//GET
+//https://multi-restaurants.smartersvision.com/api/restaurants?limit=6&cuisines%5B%5D=1&cuisines%5B%5D=2&searchJoin=and&myLon=45.366&myLat=15.5554&areaLon=55.8885&areaLat=23.36
+// wILL SHOW THE NEARST RESTAURENTS
+{
+    "success": true,
+    "data": [
+        {
+            "id": 2,
+            "name": "The Lonesome Dove",
+            "description": "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "address": "2911 Corpening Drive South Lyon, MI 48178",
+            "latitude": "37.42196133580664",
+            "longitude": "-122.086749655962",
+            "phone": "+136 226 5669",
+            "mobile": "+163 525 9432",
+            "information": "<p>Monday - Thursday 10:00AM - 11:00PM</p><p>Friday - Sunday 12:00PM - 5:00AM</p>",
+            "delivery_fee": 5,
+            "admin_commission": 30,
+            "created_at": "2019-08-30 11:15:09",
+            "updated_at": "2020-08-22 15:41:33",
+            "delivery_range": 0,
+            "default_tax": 0,
+            "closed": false,
+            "available_for_delivery": true,
+            "active": true,
+            "cuisine_id": 1,
+            "restaurant_id": 2,
+            "custom_fields": [],
+            "has_media": true,
+            "rate": "2.5",
+            "media": [
+                {
+                    "id": 69,
+                    "model_type": "App\\Models\\Restaurant",
+                    "model_id": 2,
+                    "collection_name": "image",
+                    "name": "restaurant-3597677_1280",
+                    "file_name": "restaurant-3597677_1280.jpg",
+                    "mime_type": "image/jpeg",
+                    "disk": "public",
+                    "size": 369963,
+                    "manipulations": [],
+                    "custom_properties": {
+                        "uuid": "76a05190-0d7d-4b24-9100-ff78e0aa04dc",
+                        "generated_conversions": {
+                            "thumb": true,
+                            "icon": true
+                        }
+                    },
+                    "responsive_images": [],
+                    "order_column": 67,
+                    "created_at": "2019-10-16 18:34:20",
+                    "updated_at": "2019-10-16 18:34:20",
+                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/69/restaurant-3597677_1280.jpg",
+                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
+                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
+                    "formated_size": "361.3 KB"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "La Perla Restaurant",
+            "description": "<p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum<br></p>",
+            "address": "360 Jody Road Chester Heights, PA 19017",
+            "latitude": "37.42196233580664",
+            "longitude": "-122.086743655962",
+            "phone": "+136 226 5669",
+            "mobile": "+163 525 9432",
+            "information": "<p>Monday - Thursday 10:00AM - 11:00PM</p><p>Friday - Sunday 12:00PM - 5:00AM</p>",
+            "delivery_fee": 6,
+            "admin_commission": 25,
+            "created_at": "2019-10-09 15:12:20",
+            "updated_at": "2020-08-22 15:41:44",
+            "delivery_range": 0,
+            "default_tax": 0,
+            "closed": false,
+            "available_for_delivery": true,
+            "active": true,
+            "cuisine_id": 2,
+            "restaurant_id": 4,
+            "custom_fields": [],
+            "has_media": true,
+            "rate": "3.7",
+            "media": [
+                {
+                    "id": 75,
+                    "model_type": "App\\Models\\Restaurant",
+                    "model_id": 4,
+                    "collection_name": "image",
+                    "name": "restaurant-1837150_1920",
+                    "file_name": "restaurant-1837150_1920.jpg",
+                    "mime_type": "image/jpeg",
+                    "disk": "public",
+                    "size": 540709,
+                    "manipulations": [],
+                    "custom_properties": {
+                        "uuid": "05801bad-536b-47cc-85db-cbd391fd5eab",
+                        "generated_conversions": {
+                            "thumb": true,
+                            "icon": true
+                        }
+                    },
+                    "responsive_images": [],
+                    "order_column": 73,
+                    "created_at": "2019-10-16 18:38:18",
+                    "updated_at": "2019-10-16 18:38:18",
+                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/75/restaurant-1837150_1920.jpg",
+                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/75/conversions/restaurant-1837150_1920-thumb.jpg",
+                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/75/conversions/restaurant-1837150_1920-icon.jpg",
+                    "formated_size": "528 KB"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "ع الفحم",
+            "description": "<p>نللنهتتة</p>",
+            "address": "Elhadba",
+            "latitude": "27.854860",
+            "longitude": "34.303552",
+            "phone": "01200234071",
+            "mobile": "01200234071",
+            "information": "<p>هاغ انزوةة</p>",
+            "delivery_fee": null,
+            "admin_commission": 3,
+            "created_at": "2021-07-31 10:21:55",
+            "updated_at": "2021-07-31 10:23:40",
+            "delivery_range": 300,
+            "default_tax": null,
+            "closed": false,
+            "available_for_delivery": true,
+            "active": true,
+            "cuisine_id": 2,
+            "restaurant_id": 5,
+            "custom_fields": [],
+            "has_media": true,
+            "rate": null,
+            "media": [
+                {
+                    "id": 167,
+                    "model_type": "App\\Models\\Restaurant",
+                    "model_id": 5,
+                    "collection_name": "image",
+                    "name": "Screenshot_٢٠٢١٠٧٣١_١١٤٤٥١",
+                    "file_name": "Screenshot_٢٠٢١٠٧٣١_١١٤٤٥١.jpg",
+                    "mime_type": "image/jpeg",
+                    "disk": "public",
+                    "size": 278014,
+                    "manipulations": [],
+                    "custom_properties": {
+                        "uuid": "69cb7494-045e-42ff-b854-26189012ddef",
+                        "user_id": 1,
+                        "generated_conversions": {
+                            "thumb": true,
+                            "icon": true
+                        }
+                    },
+                    "responsive_images": [],
+                    "order_column": 157,
+                    "created_at": "2021-07-31 10:23:40",
+                    "updated_at": "2021-07-31 10:23:40",
+                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/167/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A1%D9%A0%D9%A7%D9%A3%D9%A1_%D9%A1%D9%A1%D9%A4%D9%A4%D9%A5%D9%A1.jpg",
+                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/167/conversions/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A1%D9%A0%D9%A7%D9%A3%D9%A1_%D9%A1%D9%A1%D9%A4%D9%A4%D9%A5%D9%A1-thumb.jpg",
+                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/167/conversions/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A1%D9%A0%D9%A7%D9%A3%D9%A1_%D9%A1%D9%A1%D9%A4%D9%A4%D9%A5%D9%A1-icon.jpg",
+                    "formated_size": "271.5 KB"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "testing restaurant",
+            "description": "<p>ghfh jh fjj jg khk hk</p>",
+            "address": null,
+            "latitude": "12",
+            "longitude": "13",
+            "phone": null,
+            "mobile": null,
+            "information": "<p>uyi myuui hbfghgf hfghf jnfgj jmghj ggjkmg gkmgkmg kjtg</p>",
+            "delivery_fee": null,
+            "admin_commission": 0,
+            "created_at": "2021-08-01 14:55:10",
+            "updated_at": "2021-08-02 04:40:46",
+            "delivery_range": null,
+            "default_tax": null,
+            "closed": false,
+            "available_for_delivery": true,
+            "active": true,
+            "cuisine_id": 2,
+            "restaurant_id": 6,
+            "custom_fields": [],
+            "has_media": false,
+            "rate": null,
+            "media": []
+        }
+    ],
+    "message": "Restaurants retrieved successfully"
+}

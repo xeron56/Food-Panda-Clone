@@ -43,7 +43,7 @@ class SearchController extends ControllerMVC {
     }, onDone: () {});
   }
 
-  Future<void> refreshSearch(search) async {
+  Future<void> refreshSearch(search) async {     
     setState(() {
       restaurants = <Restaurant>[];
       foods = <Food>[];

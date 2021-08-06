@@ -5,6 +5,8 @@ import '../elements/FoodsCarouselLoaderWidget.dart';
 import '../models/food.dart';
 
 class FoodsCarouselWidget extends StatelessWidget {
+  
+  //under variable which accept the list of foods data from the server
   final List<Food> foodsList;
   final String heroTag;
 

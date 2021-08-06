@@ -60,7 +60,7 @@ class _PagesWidgetState extends State<PagesWidget> {
           widget.currentPage = MapWidget(parentScaffoldKey: widget.scaffoldKey, routeArgument: widget.routeArgument);
           break;
         case 2:
-          widget.currentPage = HomeWidget(parentScaffoldKey: widget.scaffoldKey);
+          widget.currentPage = HomeWidget(parentScaffoldKey: widget.scaffoldKey); // home page
           break;
         case 3:
           widget.currentPage = OrdersWidget(parentScaffoldKey: widget.scaffoldKey);

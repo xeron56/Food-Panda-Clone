@@ -41,6 +41,7 @@ class SearchBarWidget extends StatelessWidget {
             InkWell(
               onTap: () {
                 onClickFilter('e');
+                // going to the search function 
               },
               child: Container(
                 padding: const EdgeInsets.only(right: 10, left: 10, top: 5, bottom: 5),

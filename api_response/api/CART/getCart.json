@@ -1,0 +1,341 @@
+
+//get cart data beforre checkout
+//GET
+//https://multi-restaurants.smartersvision.com/api/carts?api_token=huy0yC9vAOan0jtxtuvVaZbg3tBKS8d5UXwJ964mE1OaLQjWL3O0S88Xo0Gm&with=food;food.restaurant;extras&search=user_id:54&searchFields=user_id:=
+
+{
+    "success": true,
+    "data": [
+        {
+            "id": 115,
+            "food_id": 1,
+            "user_id": 54,
+            "quantity": 1,
+            "created_at": "2021-08-04 12:55:18",
+            "updated_at": "2021-08-04 12:55:18",
+            "custom_fields": [],
+            "food": {
+                "id": 1,
+                "name": "American fried rice",
+                "price": 11,
+                "discount_price": 0,
+                "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s<br></p>",
+                "ingredients": "<p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br></p>",
+                "weight": 193,
+                "featured": true,
+                "restaurant_id": 2,
+                "category_id": 1,
+                "created_at": "2019-08-30 11:21:43",
+                "updated_at": "2019-09-03 21:58:30",
+                "package_items_count": 0,
+                "unit": null,
+                "deliverable": true,
+                "custom_fields": [],
+                "has_media": true,
+                "restaurant": {
+                    "id": 2,
+                    "name": "The Lonesome Dove",
+                    "description": "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                    "address": "2911 Corpening Drive South Lyon, MI 48178",
+                    "latitude": "37.42196133580664",
+                    "longitude": "-122.086749655962",
+                    "phone": "+136 226 5669",
+                    "mobile": "+163 525 9432",
+                    "information": "<p>Monday - Thursday 10:00AM - 11:00PM</p><p>Friday - Sunday 12:00PM - 5:00AM</p>",
+                    "delivery_fee": 5,
+                    "admin_commission": 30,
+                    "created_at": "2019-08-30 11:15:09",
+                    "updated_at": "2020-08-22 15:41:33",
+                    "delivery_range": 0,
+                    "default_tax": 0,
+                    "closed": false,
+                    "available_for_delivery": true,
+                    "active": true,
+                    "custom_fields": [],
+                    "has_media": true,
+                    "rate": "2.5",
+                    "media": [
+                        {
+                            "id": 69,
+                            "model_type": "App\\Models\\Restaurant",
+                            "model_id": 2,
+                            "collection_name": "image",
+                            "name": "restaurant-3597677_1280",
+                            "file_name": "restaurant-3597677_1280.jpg",
+                            "mime_type": "image/jpeg",
+                            "disk": "public",
+                            "size": 369963,
+                            "manipulations": [],
+                            "custom_properties": {
+                                "uuid": "76a05190-0d7d-4b24-9100-ff78e0aa04dc",
+                                "generated_conversions": {
+                                    "thumb": true,
+                                    "icon": true
+                                }
+                            },
+                            "responsive_images": [],
+                            "order_column": 67,
+                            "created_at": "2019-10-16 18:34:20",
+                            "updated_at": "2019-10-16 18:34:20",
+                            "url": "https://multi-restaurants.smartersvision.com/storage/app/public/69/restaurant-3597677_1280.jpg",
+                            "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
+                            "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
+                            "formated_size": "361.3 KB"
+                        }
+                    ]
+                },
+                "media": [
+                    {
+                        "id": 48,
+                        "model_type": "App\\Models\\Food",
+                        "model_id": 1,
+                        "collection_name": "image",
+                        "name": "food1",
+                        "file_name": "food1.jpg",
+                        "mime_type": "image/jpeg",
+                        "disk": "public",
+                        "size": 138202,
+                        "manipulations": [],
+                        "custom_properties": {
+                            "uuid": "f678c87b-5583-4a1c-bdec-4fbde1f3bdca",
+                            "generated_conversions": {
+                                "thumb": true,
+                                "icon": true
+                            }
+                        },
+                        "responsive_images": [],
+                        "order_column": 46,
+                        "created_at": "2019-08-30 11:21:43",
+                        "updated_at": "2019-08-30 11:21:43",
+                        "url": "https://multi-restaurants.smartersvision.com/storage/app/public/48/food1.jpg",
+                        "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/48/conversions/food1-thumb.jpg",
+                        "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/48/conversions/food1-icon.jpg",
+                        "formated_size": "135 KB"
+                    }
+                ]
+            },
+            "extras": []
+        },
+        {
+            "id": 116,
+            "food_id": 13,
+            "user_id": 54,
+            "quantity": 4,
+            "created_at": "2021-08-04 12:55:56",
+            "updated_at": "2021-08-04 12:55:56",
+            "custom_fields": [],
+            "food": {
+                "id": 13,
+                "name": "Italian Sausage Soup",
+                "price": 9.99,
+                "discount_price": 7.89,
+                "description": "This soup embodies all the wonders of Italian cooking: Italian sausage, garlic, tomatoes and red wines. Serve with hot bread and salad for a delicious meal. Garnish with Parmesan cheese.",
+                "ingredients": "1 pound sweet Italian sausage, casings removed1 cup chopped onion2 cloves garlic, minced5 cups beef broth1/2 cup water 1/2 cup red wine4 large tomatoes - peeled, seeded and chopped1 cup thinly sliced carrots1/2 tablespoon packed fresh basil leaves1/2 teas",
+                "weight": 150,
+                "featured": true,
+                "restaurant_id": 2,
+                "category_id": 3,
+                "created_at": "2019-10-18 09:57:54",
+                "updated_at": "2019-10-18 09:57:54",
+                "package_items_count": 0,
+                "unit": null,
+                "deliverable": true,
+                "custom_fields": [],
+                "has_media": true,
+                "restaurant": {
+                    "id": 2,
+                    "name": "The Lonesome Dove",
+                    "description": "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                    "address": "2911 Corpening Drive South Lyon, MI 48178",
+                    "latitude": "37.42196133580664",
+                    "longitude": "-122.086749655962",
+                    "phone": "+136 226 5669",
+                    "mobile": "+163 525 9432",
+                    "information": "<p>Monday - Thursday 10:00AM - 11:00PM</p><p>Friday - Sunday 12:00PM - 5:00AM</p>",
+                    "delivery_fee": 5,
+                    "admin_commission": 30,
+                    "created_at": "2019-08-30 11:15:09",
+                    "updated_at": "2020-08-22 15:41:33",
+                    "delivery_range": 0,
+                    "default_tax": 0,
+                    "closed": false,
+                    "available_for_delivery": true,
+                    "active": true,
+                    "custom_fields": [],
+                    "has_media": true,
+                    "rate": "2.5",
+                    "media": [
+                        {
+                            "id": 69,
+                            "model_type": "App\\Models\\Restaurant",
+                            "model_id": 2,
+                            "collection_name": "image",
+                            "name": "restaurant-3597677_1280",
+                            "file_name": "restaurant-3597677_1280.jpg",
+                            "mime_type": "image/jpeg",
+                            "disk": "public",
+                            "size": 369963,
+                            "manipulations": [],
+                            "custom_properties": {
+                                "uuid": "76a05190-0d7d-4b24-9100-ff78e0aa04dc",
+                                "generated_conversions": {
+                                    "thumb": true,
+                                    "icon": true
+                                }
+                            },
+                            "responsive_images": [],
+                            "order_column": 67,
+                            "created_at": "2019-10-16 18:34:20",
+                            "updated_at": "2019-10-16 18:34:20",
+                            "url": "https://multi-restaurants.smartersvision.com/storage/app/public/69/restaurant-3597677_1280.jpg",
+                            "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
+                            "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
+                            "formated_size": "361.3 KB"
+                        }
+                    ]
+                },
+                "media": [
+                    {
+                        "id": 117,
+                        "model_type": "App\\Models\\Food",
+                        "model_id": 13,
+                        "collection_name": "image",
+                        "name": "soup-1503117_1280",
+                        "file_name": "soup-1503117_1280.jpg",
+                        "mime_type": "image/jpeg",
+                        "disk": "public",
+                        "size": 240711,
+                        "manipulations": [],
+                        "custom_properties": {
+                            "uuid": "91232db0-e160-419c-aa6b-c7705a6283d5",
+                            "generated_conversions": {
+                                "thumb": true,
+                                "icon": true
+                            }
+                        },
+                        "responsive_images": [],
+                        "order_column": 115,
+                        "created_at": "2019-10-18 09:57:54",
+                        "updated_at": "2019-10-18 09:57:54",
+                        "url": "https://multi-restaurants.smartersvision.com/storage/app/public/117/soup-1503117_1280.jpg",
+                        "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/117/conversions/soup-1503117_1280-thumb.jpg",
+                        "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/117/conversions/soup-1503117_1280-icon.jpg",
+                        "formated_size": "235.1 KB"
+                    }
+                ]
+            },
+            "extras": []
+        },
+        {
+            "id": 119,
+            "food_id": 5,
+            "user_id": 54,
+            "quantity": 3,
+            "created_at": "2021-08-04 15:40:28",
+            "updated_at": "2021-08-04 15:40:28",
+            "custom_fields": [],
+            "food": {
+                "id": 5,
+                "name": "Pizza Valtellina",
+                "price": 7.4,
+                "discount_price": 0,
+                "description": "Tomato sauce, mozzarella, bresaola, Parmesan flakes and rocket",
+                "ingredients": "Tomato sauce, mozzarella, bresaola, Parmesan flakes and rocket",
+                "weight": 245.3,
+                "featured": false,
+                "restaurant_id": 2,
+                "category_id": 1,
+                "created_at": "2019-10-18 09:15:19",
+                "updated_at": "2019-10-18 09:15:19",
+                "package_items_count": 0,
+                "unit": null,
+                "deliverable": true,
+                "custom_fields": [],
+                "has_media": true,
+                "restaurant": {
+                    "id": 2,
+                    "name": "The Lonesome Dove",
+                    "description": "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                    "address": "2911 Corpening Drive South Lyon, MI 48178",
+                    "latitude": "37.42196133580664",
+                    "longitude": "-122.086749655962",
+                    "phone": "+136 226 5669",
+                    "mobile": "+163 525 9432",
+                    "information": "<p>Monday - Thursday 10:00AM - 11:00PM</p><p>Friday - Sunday 12:00PM - 5:00AM</p>",
+                    "delivery_fee": 5,
+                    "admin_commission": 30,
+                    "created_at": "2019-08-30 11:15:09",
+                    "updated_at": "2020-08-22 15:41:33",
+                    "delivery_range": 0,
+                    "default_tax": 0,
+                    "closed": false,
+                    "available_for_delivery": true,
+                    "active": true,
+                    "custom_fields": [],
+                    "has_media": true,
+                    "rate": "2.5",
+                    "media": [
+                        {
+                            "id": 69,
+                            "model_type": "App\\Models\\Restaurant",
+                            "model_id": 2,
+                            "collection_name": "image",
+                            "name": "restaurant-3597677_1280",
+                            "file_name": "restaurant-3597677_1280.jpg",
+                            "mime_type": "image/jpeg",
+                            "disk": "public",
+                            "size": 369963,
+                            "manipulations": [],
+                            "custom_properties": {
+                                "uuid": "76a05190-0d7d-4b24-9100-ff78e0aa04dc",
+                                "generated_conversions": {
+                                    "thumb": true,
+                                    "icon": true
+                                }
+                            },
+                            "responsive_images": [],
+                            "order_column": 67,
+                            "created_at": "2019-10-16 18:34:20",
+                            "updated_at": "2019-10-16 18:34:20",
+                            "url": "https://multi-restaurants.smartersvision.com/storage/app/public/69/restaurant-3597677_1280.jpg",
+                            "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
+                            "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
+                            "formated_size": "361.3 KB"
+                        }
+                    ]
+                },
+                "media": [
+                    {
+                        "id": 101,
+                        "model_type": "App\\Models\\Food",
+                        "model_id": 5,
+                        "collection_name": "image",
+                        "name": "pizza-2802332_1280",
+                        "file_name": "pizza-2802332_1280.jpg",
+                        "mime_type": "image/jpeg",
+                        "disk": "public",
+                        "size": 450717,
+                        "manipulations": [],
+                        "custom_properties": {
+                            "uuid": "fe38c3e7-6d6f-4b53-94aa-b1ebe5970854",
+                            "generated_conversions": {
+                                "thumb": true,
+                                "icon": true
+                            }
+                        },
+                        "responsive_images": [],
+                        "order_column": 99,
+                        "created_at": "2019-10-18 09:15:19",
+                        "updated_at": "2019-10-18 09:15:19",
+                        "url": "https://multi-restaurants.smartersvision.com/storage/app/public/101/pizza-2802332_1280.jpg",
+                        "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/101/conversions/pizza-2802332_1280-thumb.jpg",
+                        "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/101/conversions/pizza-2802332_1280-icon.jpg",
+                        "formated_size": "440.2 KB"
+                    }
+                ]
+            },
+            "extras": []
+        }
+    ],
+    "message": "Carts retrieved successfully"
+}

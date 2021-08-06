@@ -18,6 +18,8 @@ class SearchResultWidget extends StatefulWidget {
 }
 
 class _SearchResultWidgetState extends StateMVC<SearchResultWidget> {
+
+  //calling this function will cause the search to be performed
   SearchController _con;
 
   _SearchResultWidgetState() : super(SearchController()) {
@@ -60,6 +62,7 @@ class _SearchResultWidgetState extends StateMVC<SearchResultWidget> {
           ),
           Padding(
             padding: const EdgeInsets.all(20),
+            //search results text field
             child: TextField(
               onSubmitted: (text) async {
                 await _con.refreshSearch(text);
@@ -102,6 +105,8 @@ class _SearchResultWidgetState extends StateMVC<SearchResultWidget> {
                           return SizedBox(height: 10);
                         },
                         itemBuilder: (context, index) {
+                          // search result show list widget
+                          //*********** 
                           return FoodItemWidget(
                             heroTag: 'search_list',
                             food: _con.foods.elementAt(index),
@@ -133,6 +138,7 @@ class _SearchResultWidgetState extends StateMVC<SearchResultWidget> {
                                     heroTag: widget.heroTag,
                                   ));
                             },
+                            //building restaurent card view with data from api
                             child: CardWidget(restaurant: _con.restaurants.elementAt(index), heroTag: widget.heroTag),
                           );
                         },

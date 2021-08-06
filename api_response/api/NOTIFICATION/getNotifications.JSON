@@ -1,0 +1,10 @@
+
+//get notification list
+//get
+//https://multi-restaurants.smartersvision.com/api/notifications?api_token=huy0yC9vAOan0jtxtuvVaZbg3tBKS8d5UXwJ964mE1OaLQjWL3O0S88Xo0Gm&search=notifiable_id:54&searchFields=notifiable_id:=&orderBy=created_at&sortedBy=desc&limit=10
+
+{
+    "success": true,
+    "data": [],
+    "message": "Notifications retrieved successfully"
+}

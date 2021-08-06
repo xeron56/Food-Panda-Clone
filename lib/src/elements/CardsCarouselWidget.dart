@@ -34,6 +34,7 @@ class _CardsCarouselWidgetState extends State<CardsCarouselWidget> {
               itemBuilder: (context, index) {
                 return GestureDetector(
                   onTap: () {
+                    //res retails
                     Navigator.of(context).pushNamed('/Details',
                         arguments: RouteArgument(
                           id: '0',
@@ -41,6 +42,7 @@ class _CardsCarouselWidgetState extends State<CardsCarouselWidget> {
                           heroTag: widget.heroTag,
                         ));
                   },
+                  //sending all res data to tha card widget
                   child: CardWidget(restaurant: widget.restaurantsList.elementAt(index), heroTag: widget.heroTag),
                 );
               },

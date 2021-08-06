@@ -1,0 +1,84 @@
+
+
+// id wise user review retrieval
+//GET
+//https:/localhost/api/restaurant_reviews?with=user&search=restaurant_id:3
+
+{
+    "success": true,
+    "data": [
+        {
+            "id": 4,
+            "review": "Platea dictumst quisque sagittis purus. Odio eu feugiat pretium nibh ipsum consequat nisl vel.",
+            "rate": 4,
+            "user_id": 19,
+            "restaurant_id": 3,
+            "created_at": "2019-10-16 18:44:15",
+            "updated_at": "2019-10-16 18:44:15",
+            "custom_fields": [],
+            "user": {
+                "id": 19,
+                "name": "Charles W. Abeyta",
+                "email": "client@demo.com",
+                "api_token": "fXLu7VeYgXDu82SkMxlLPG1mCAXc4EBIx6O5isgYVIKFQiHah0xiOHmzNsBv",
+                "created_at": "2019-10-12 21:31:26",
+                "updated_at": "2021-07-27 10:41:47",
+                "braintree_id": null,
+                "paypal_email": null,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "device_token": "fmposElaQD6AtEwRAMzyYV:APA91bGBkWpQ9ncq9VfJowjM8_ZeaOj1c8YyWxe6MggSQ9FXZ-k3EsvsgFBuybIt8D9tj-9jE97ZhII--Tv5v3uYNpV6AdTngeyAbqL1lUsHpQRItpllnyV1FVKbgqBAgP20GqJJwsA0",
+                "custom_fields": {
+                    "phone": {
+                        "value": "+1 098-6543-236",
+                        "view": "+1 098-6543-236",
+                        "name": "phone"
+                    },
+                    "bio": {
+                        "value": "Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Tortor pretium viverra suspendisse",
+                        "view": "Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Tortor pretium viverra suspendisse",
+                        "name": "bio"
+                    },
+                    "address": {
+                        "value": "sita ram wande chawl room no 02",
+                        "view": "sita ram wande chawl room no 02",
+                        "name": "address"
+                    }
+                },
+                "has_media": true,
+                "media": [
+                    {
+                        "id": 65,
+                        "model_type": "App\\Models\\User",
+                        "model_id": 19,
+                        "collection_name": "avatar",
+                        "name": "api",
+                        "file_name": "api.png",
+                        "mime_type": "image/png",
+                        "disk": "public",
+                        "size": 796,
+                        "manipulations": [],
+                        "custom_properties": {
+                            "uuid": "$2y$10$MhJMEFqv6leUxN7oOApXHuUStBVmAbec.it7g1HRt63G7xdNwmmRK",
+                            "generated_conversions": {
+                                "thumb": true,
+                                "icon": true
+                            }
+                        },
+                        "responsive_images": [],
+                        "order_column": 63,
+                        "created_at": "2019-10-12 21:31:27",
+                        "updated_at": "2019-10-12 21:31:28",
+                        "url": "https:/localhost/storage/app/public/65/api.png",
+                        "thumb": "https:/localhost/storage/app/public/65/conversions/api-thumb.jpg",
+                        "icon": "https:/localhost/storage/app/public/65/conversions/api-icon.jpg",
+                        "formated_size": "796 B"
+                    }
+                ]
+            }
+        }
+    ],
+    "message": "Restaurant Reviews retrieved successfully"
+}

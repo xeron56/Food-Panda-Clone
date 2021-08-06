@@ -1,0 +1,125 @@
+
+//GET 
+//https://multi-restaurants.smartersvision.com/api/categories?restaurant_id=2
+
+//Get food catagory of restaurent 
+{
+    "success": true,
+    "data": [
+        {
+            "id": 1,
+            "name": "Grains",
+            "created_at": "2019-08-29 21:54:23",
+            "updated_at": "2019-10-18 11:38:04",
+            "description": null,
+            "custom_fields": [],
+            "has_media": true,
+            "media": [
+                {
+                    "id": 133,
+                    "model_type": "App\\Models\\Category",
+                    "model_id": 1,
+                    "collection_name": "image",
+                    "name": "milk",
+                    "file_name": "milk.svg",
+                    "mime_type": "image/svg+xml",
+                    "disk": "public",
+                    "size": 3190,
+                    "manipulations": [],
+                    "custom_properties": {
+                        "uuid": "99ee10c4-81a5-479e-95b1-23e7c35c9b95",
+                        "generated_conversions": {
+                            "thumb": true,
+                            "icon": true
+                        }
+                    },
+                    "responsive_images": [],
+                    "order_column": 131,
+                    "created_at": "2019-10-18 11:26:50",
+                    "updated_at": "2019-10-18 11:26:50",
+                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/133/milk.svg",
+                    "thumb": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "icon": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "formated_size": "3.1 KB"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Sandwiches",
+            "created_at": "2019-08-29 22:32:04",
+            "updated_at": "2019-08-29 22:32:04",
+            "description": null,
+            "custom_fields": [],
+            "has_media": true,
+            "media": [
+                {
+                    "id": 131,
+                    "model_type": "App\\Models\\Category",
+                    "model_id": 2,
+                    "collection_name": "image",
+                    "name": "hamburguer-1",
+                    "file_name": "hamburguer-1.svg",
+                    "mime_type": "image/svg+xml",
+                    "disk": "public",
+                    "size": 4161,
+                    "manipulations": [],
+                    "custom_properties": {
+                        "uuid": "9f3a2ba1-50be-44f5-b01f-d0f50bc39b43",
+                        "generated_conversions": {
+                            "thumb": true,
+                            "icon": true
+                        }
+                    },
+                    "responsive_images": [],
+                    "order_column": 129,
+                    "created_at": "2019-10-18 11:25:54",
+                    "updated_at": "2019-10-18 11:25:54",
+                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/131/hamburguer-1.svg",
+                    "thumb": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "icon": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "formated_size": "4.1 KB"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Vegetables",
+            "created_at": "2019-08-29 22:42:51",
+            "updated_at": "2019-10-18 11:36:57",
+            "description": null,
+            "custom_fields": [],
+            "has_media": true,
+            "media": [
+                {
+                    "id": 139,
+                    "model_type": "App\\Models\\Category",
+                    "model_id": 3,
+                    "collection_name": "image",
+                    "name": "food",
+                    "file_name": "food.svg",
+                    "mime_type": "image/svg+xml",
+                    "disk": "public",
+                    "size": 3483,
+                    "manipulations": [],
+                    "custom_properties": {
+                        "uuid": "b5a61bc0-5b19-4236-8be5-39320cb41f37",
+                        "generated_conversions": {
+                            "thumb": true,
+                            "icon": true
+                        }
+                    },
+                    "responsive_images": [],
+                    "order_column": 137,
+                    "created_at": "2019-10-18 11:29:59",
+                    "updated_at": "2019-10-18 11:29:59",
+                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/139/food.svg",
+                    "thumb": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "icon": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "formated_size": "3.4 KB"
+                }
+            ]
+        }
+    ],
+    "message": "Categories retrieved successfully"
+}

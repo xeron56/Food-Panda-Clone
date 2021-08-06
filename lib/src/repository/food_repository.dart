@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:food_delivery_app/src/models/restaurant.dart';
 import 'package:global_configuration/global_configuration.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -59,6 +60,12 @@ Future<Stream<Food>> getFood(String foodId) async {
     return new Stream.value(new Food.fromJSON({}));
   }
 }
+
+//
+// ─── SEARCH FOOD WITH KEYWORD AND ADDRESS ───────────────────────────────────────
+//
+
+  
 
 Future<Stream<Food>> searchFoods(String search, Address address) async {
   Uri uri = Helper.getUri('api/foods');
@@ -194,6 +201,10 @@ Future<Favorite> removeFavorite(Favorite favorite) async {
   }
 }
 
+//
+// ─── BY USUING THIS GET ALL LIST OF FOOD WITH RESTAURENT ID ─────────────────────
+//
+
 Future<Stream<Food>> getFoodsOfRestaurant(String restaurantId, {List<String> categories}) async {
   Uri uri = Helper.getUri('api/foods/categories');
   Map<String, dynamic> query = {
@@ -219,6 +230,12 @@ Future<Stream<Food>> getFoodsOfRestaurant(String restaurantId, {List<String> cat
   }
 }
 
+//
+// ─── -- ─────────────────────────────────────────────────────────────────────────
+//
+
+  
+
 Future<Stream<Food>> getTrendingFoodsOfRestaurant(String restaurantId) async {
   Uri uri = Helper.getUri('api/foods');
   uri = uri.replace(queryParameters: {
@@ -241,6 +258,12 @@ Future<Stream<Food>> getTrendingFoodsOfRestaurant(String restaurantId) async {
   }
 }
 
+//
+// ─── GETTING FEATURED FOOD FROM RESTUARENT ──────────────────────────────────────
+//
+
+  
+
 Future<Stream<Food>> getFeaturedFoodsOfRestaurant(String restaurantId) async {
   Uri uri = Helper.getUri('api/foods');
   uri = uri.replace(queryParameters: {
@@ -262,6 +285,12 @@ Future<Stream<Food>> getFeaturedFoodsOfRestaurant(String restaurantId) async {
   }
 }
 
+
+//
+// ─── ADDING FOOD REVIEW ─────────────────────────────────────────────────────────
+//
+
+  
 Future<Review> addFoodReview(Review review, Food food) async {
   final String url = '${GlobalConfiguration().getValue('api_base_url')}food_reviews';
   final client = new http.Client();

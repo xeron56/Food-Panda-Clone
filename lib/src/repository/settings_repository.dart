@@ -22,13 +22,18 @@ ValueNotifier<Address> deliveryAddress = new ValueNotifier(new Address());
 Coupon coupon = new Coupon.fromJSON({});
 final navigatorKey = GlobalKey<NavigatorState>();
 
+
+
 Future<Setting> initSettings() async {
   Setting _setting;
+  //getting setting api urlv
   final String url = '${GlobalConfiguration().getValue('api_base_url')}settings';
   try {
     final response = await http.get(url, headers: {HttpHeaders.contentTypeHeader: 'application/json'});
     if (response.statusCode == 200 && response.headers.containsValue('application/json')) {
       if (json.decode(response.body)['data'] != null) {
+
+        //=>taking saved shared preferance for use in app
         SharedPreferences prefs = await SharedPreferences.getInstance();
         await prefs.setString('settings', json.encode(json.decode(response.body)['data']));
         _setting = Setting.fromJSON(json.decode(response.body)['data']);
@@ -80,6 +85,7 @@ Future<Address> changeCurrentLocation(Address _address) async {
   return _address;
 }
 
+//saving location data local and access later
 Future<Address> getCurrentLocation() async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
   //await prefs.clear();

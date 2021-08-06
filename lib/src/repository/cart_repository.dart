@@ -10,6 +10,7 @@ import '../models/cart.dart';
 import '../models/user.dart';
 import '../repository/user_repository.dart' as userRepo;
 
+//getting all cart added item information
 Future<Stream<Cart>> getCart() async {
   User _user = userRepo.currentUser.value;
   if (_user.apiToken == null) {
@@ -27,6 +28,7 @@ Future<Stream<Cart>> getCart() async {
 }
 
 Future<Stream<int>> getCartCount() async {
+  //geting user value 
   User _user = userRepo.currentUser.value;
   if (_user.apiToken == null) {
     return new Stream.value(0);
@@ -42,6 +44,11 @@ Future<Stream<int>> getCartCount() async {
       );
 }
 
+//
+// ─── POST REQUEST ADD TO CART ───────────────────────────────────────────────────
+//
+
+  
 Future<Cart> addCart(Cart cart, bool reset) async {
   User _user = userRepo.currentUser.value;
   if (_user.apiToken == null) {

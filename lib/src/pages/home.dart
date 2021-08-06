@@ -14,7 +14,7 @@ import '../elements/SearchBarWidget.dart';
 import '../elements/ShoppingCartButtonWidget.dart';
 import '../repository/settings_repository.dart' as settingsRepo;
 import '../repository/user_repository.dart';
-
+//which fatches all setting data from the server
 class HomeWidget extends StatefulWidget {
   final GlobalKey<ScaffoldState> parentScaffoldKey;
 
@@ -28,6 +28,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
   HomeController _con;
 
   _HomeWidgetState() : super(HomeController()) {
+    //calling the home controller to fetch the data from the server
     _con = controller;
   }
 
@@ -36,7 +37,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
     return Scaffold(
       appBar: AppBar(
         leading: new IconButton(
-          icon: new Icon(Icons.sort, color: Theme.of(context).hintColor),
+          icon: new Icon(Icons.sort, color: Theme.of(context).hintColor),//drawer part of the appbar
           onPressed: () => widget.parentScaffoldKey.currentState.openDrawer(),
         ),
         automaticallyImplyLeading: false,
@@ -164,6 +165,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                       ],
                     ),
                   );
+                  //top restaurants card 
                 case 'top_restaurants':
                   return CardsCarouselWidget(restaurantsList: _con.topRestaurants, heroTag: 'home_top_restaurants');
                 case 'trending_week_heading':

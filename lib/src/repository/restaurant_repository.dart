@@ -12,11 +12,15 @@ import '../models/filter.dart';
 import '../models/restaurant.dart';
 import '../models/review.dart';
 import '../repository/user_repository.dart';
+// fetching restaurant data from server  
 
+// fetching Nearest restaurant data from server
 Future<Stream<Restaurant>> getNearRestaurants(Address myLocation, Address areaLocation) async {
   Uri uri = Helper.getUri('api/restaurants');
   Map<String, dynamic> _queryParams = {};
   SharedPreferences prefs = await SharedPreferences.getInstance();
+
+  //
   Filter filter = Filter.fromJSON(json.decode(prefs.getString('filter') ?? '{}'));
 
   _queryParams['limit'] = '6';
@@ -41,6 +45,7 @@ Future<Stream<Restaurant>> getNearRestaurants(Address myLocation, Address areaLo
   }
 }
 
+// feaching popular restaurant data from server
 Future<Stream<Restaurant>> getPopularRestaurants(Address myLocation) async {
   Uri uri = Helper.getUri('api/restaurants');
   Map<String, dynamic> _queryParams = {};
@@ -68,6 +73,8 @@ Future<Stream<Restaurant>> getPopularRestaurants(Address myLocation) async {
   }
 }
 
+
+// search restaurant data from server
 Future<Stream<Restaurant>> searchRestaurants(String search, Address address) async {
   Uri uri = Helper.getUri('api/restaurants');
   Map<String, dynamic> _queryParams = {};
@@ -94,6 +101,8 @@ Future<Stream<Restaurant>> searchRestaurants(String search, Address address) asy
   }
 }
 
+
+// Id wise restaurant data from server
 Future<Stream<Restaurant>> getRestaurant(String id, Address address) async {
   Uri uri = Helper.getUri('api/restaurants/$id');
   Map<String, dynamic> _queryParams = {};
@@ -116,6 +125,8 @@ Future<Stream<Restaurant>> getRestaurant(String id, Address address) async {
   }
 }
 
+
+//ID wise restaurant review from server
 Future<Stream<Review>> getRestaurantReviews(String id) async {
   final String url = '${GlobalConfiguration().getValue('api_base_url')}restaurant_reviews?with=user&search=restaurant_id:$id';
   try {
@@ -145,6 +156,7 @@ Future<Stream<Review>> getRecentReviews() async {
   }
 }
 
+//ID wise restaurant review from server
 Future<Review> addRestaurantReview(Review review, Restaurant restaurant) async {
   final String url = '${GlobalConfiguration().getValue('api_base_url')}restaurant_reviews';
   final client = new http.Client();

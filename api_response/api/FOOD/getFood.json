@@ -1,0 +1,403 @@
+
+//Get
+//https://multi-restaurants.smartersvision.com/api/foods/3?with=nutrition%3Brestaurant%3Bcategory%3Bextras%3BextraGroups%3BfoodReviews%3BfoodReviews.user
+//get selected food insformation 
+
+{
+    "success": true,
+    "data": {
+        "id": 3,
+        "name": "Pizza Margherita",
+        "price": 8,
+        "discount_price": 0,
+        "description": "Tomato sauce, Firm mozzarella cheese, grated. Fresh soft mozzarella cheese, separated into small clumps. Fontina cheese, grated. Parmesan cheese, grated.",
+        "ingredients": "Tomato sauce, Firm mozzarella cheese, grated. Fresh soft mozzarella cheese, separated into small clumps. Fontina cheese, grated. Parmesan cheese, grated.",
+        "weight": 200,
+        "featured": true,
+        "restaurant_id": 1,
+        "category_id": 1,
+        "created_at": "2019-10-17 22:06:51",
+        "updated_at": "2019-10-17 22:06:51",
+        "package_items_count": 0,
+        "unit": null,
+        "deliverable": true,
+        "custom_fields": [],
+        "has_media": true,
+        "restaurant": {
+            "id": 1,
+            "name": "Home Cooking Experience",
+            "description": "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "address": "3515 Rosewood Lane Manhattan, NY 10016",
+            "latitude": "37.42796133580664",
+            "longitude": "-122.085749655962",
+            "phone": "+136 226 5669",
+            "mobile": "+163 525 9432",
+            "information": "<p>Monday - Thursday 10:00AM - 11:00PM</p><p>Friday - Sunday 12:00PM - 5:00AM</p>",
+            "delivery_fee": 7,
+            "admin_commission": 15,
+            "created_at": "2019-08-30 10:51:04",
+            "updated_at": "2020-08-22 15:41:26",
+            "delivery_range": 0,
+            "default_tax": 0,
+            "closed": false,
+            "available_for_delivery": true,
+            "active": true,
+            "custom_fields": [],
+            "has_media": true,
+            "rate": "5.0",
+            "media": [
+                {
+                    "id": 71,
+                    "model_type": "App\\Models\\Restaurant",
+                    "model_id": 1,
+                    "collection_name": "image",
+                    "name": "restaurant-2649620_1280",
+                    "file_name": "restaurant-2649620_1280.jpg",
+                    "mime_type": "image/jpeg",
+                    "disk": "public",
+                    "size": 441524,
+                    "manipulations": [],
+                    "custom_properties": {
+                        "uuid": "657d6464-130a-4805-aa97-d1b06f5809f5",
+                        "generated_conversions": {
+                            "thumb": true,
+                            "icon": true
+                        }
+                    },
+                    "responsive_images": [],
+                    "order_column": 69,
+                    "created_at": "2019-10-16 18:35:34",
+                    "updated_at": "2019-10-16 18:35:34",
+                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/71/restaurant-2649620_1280.jpg",
+                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/71/conversions/restaurant-2649620_1280-thumb.jpg",
+                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/71/conversions/restaurant-2649620_1280-icon.jpg",
+                    "formated_size": "431.2 KB"
+                }
+            ]
+        },
+        "nutrition": [
+            {
+                "id": 3,
+                "name": "Lipide",
+                "quantity": 63,
+                "food_id": 3,
+                "created_at": "2019-10-17 22:10:54",
+                "updated_at": "2019-10-17 22:11:31",
+                "custom_fields": []
+            },
+            {
+                "id": 4,
+                "name": "Proteins",
+                "quantity": 100,
+                "food_id": 3,
+                "created_at": "2019-10-17 22:11:06",
+                "updated_at": "2019-10-17 22:11:06",
+                "custom_fields": []
+            },
+            {
+                "id": 5,
+                "name": "Sugar",
+                "quantity": 14,
+                "food_id": 3,
+                "created_at": "2019-10-17 22:11:17",
+                "updated_at": "2019-10-17 22:11:17",
+                "custom_fields": []
+            },
+            {
+                "id": 20,
+                "name": "Sugar",
+                "quantity": 14,
+                "food_id": 3,
+                "created_at": "2019-10-17 22:11:17",
+                "updated_at": "2019-10-17 22:11:17",
+                "custom_fields": []
+            },
+            {
+                "id": 26,
+                "name": "Sugar",
+                "quantity": 100,
+                "food_id": 3,
+                "created_at": "2019-08-31 09:55:28",
+                "updated_at": "2019-08-31 09:55:28",
+                "custom_fields": []
+            },
+            {
+                "id": 27,
+                "name": "Proteins",
+                "quantity": 20,
+                "food_id": 3,
+                "created_at": "2019-10-09 12:26:28",
+                "updated_at": "2019-10-09 12:26:28",
+                "custom_fields": []
+            }
+        ],
+        "category": {
+            "id": 1,
+            "name": "Grains",
+            "created_at": "2019-08-29 21:54:23",
+            "updated_at": "2019-10-18 11:38:04",
+            "description": null,
+            "custom_fields": [],
+            "has_media": true,
+            "media": [
+                {
+                    "id": 133,
+                    "model_type": "App\\Models\\Category",
+                    "model_id": 1,
+                    "collection_name": "image",
+                    "name": "milk",
+                    "file_name": "milk.svg",
+                    "mime_type": "image/svg+xml",
+                    "disk": "public",
+                    "size": 3190,
+                    "manipulations": [],
+                    "custom_properties": {
+                        "uuid": "99ee10c4-81a5-479e-95b1-23e7c35c9b95",
+                        "generated_conversions": {
+                            "thumb": true,
+                            "icon": true
+                        }
+                    },
+                    "responsive_images": [],
+                    "order_column": 131,
+                    "created_at": "2019-10-18 11:26:50",
+                    "updated_at": "2019-10-18 11:26:50",
+                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/133/milk.svg",
+                    "thumb": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "icon": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "formated_size": "3.1 KB"
+                }
+            ]
+        },
+        "extras": [
+            {
+                "id": 5,
+                "name": "Mozzarella",
+                "description": "Add some Mozzarella",
+                "price": 1,
+                "food_id": 3,
+                "created_at": "2019-10-17 22:10:01",
+                "updated_at": "2019-10-17 22:10:01",
+                "extra_group_id": null,
+                "custom_fields": [],
+                "has_media": true,
+                "media": [
+                    {
+                        "id": 97,
+                        "model_type": "App\\Models\\Extra",
+                        "model_id": 5,
+                        "collection_name": "image",
+                        "name": "extra4",
+                        "file_name": "extra4.jpg",
+                        "mime_type": "image/jpeg",
+                        "disk": "public",
+                        "size": 11839,
+                        "manipulations": [],
+                        "custom_properties": {
+                            "uuid": "06a22ca5-b0d0-4037-84b8-de56544b5603",
+                            "generated_conversions": {
+                                "thumb": true,
+                                "icon": true
+                            }
+                        },
+                        "responsive_images": [],
+                        "order_column": 95,
+                        "created_at": "2019-10-17 22:10:01",
+                        "updated_at": "2019-10-17 22:10:01",
+                        "url": "https://multi-restaurants.smartersvision.com/storage/app/public/97/extra4.jpg",
+                        "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/97/conversions/extra4-thumb.jpg",
+                        "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/97/conversions/extra4-icon.jpg",
+                        "formated_size": "11.6 KB"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "name": "Vegetable oil",
+                "description": "<p>Add some&nbsp;vegetable oil</p>",
+                "price": 2,
+                "food_id": 3,
+                "created_at": "2019-10-18 10:53:34",
+                "updated_at": "2019-10-18 10:53:34",
+                "extra_group_id": null,
+                "custom_fields": [],
+                "has_media": true,
+                "media": [
+                    {
+                        "id": 125,
+                        "model_type": "App\\Models\\Extra",
+                        "model_id": 6,
+                        "collection_name": "image",
+                        "name": "extra7",
+                        "file_name": "extra7.jpg",
+                        "mime_type": "image/jpeg",
+                        "disk": "public",
+                        "size": 10574,
+                        "manipulations": [],
+                        "custom_properties": {
+                            "uuid": "be0393c4-d89d-4742-9d7c-a175b838c624",
+                            "generated_conversions": {
+                                "thumb": true,
+                                "icon": true
+                            }
+                        },
+                        "responsive_images": [],
+                        "order_column": 123,
+                        "created_at": "2019-10-18 10:53:34",
+                        "updated_at": "2019-10-18 10:53:34",
+                        "url": "https://multi-restaurants.smartersvision.com/storage/app/public/125/extra7.jpg",
+                        "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/125/conversions/extra7-thumb.jpg",
+                        "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/125/conversions/extra7-icon.jpg",
+                        "formated_size": "10.3 KB"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "name": "Tuna",
+                "description": "<p>Add some tuna</p>",
+                "price": 3,
+                "food_id": 3,
+                "created_at": "2019-10-18 11:38:44",
+                "updated_at": "2019-10-18 11:38:44",
+                "extra_group_id": null,
+                "custom_fields": [],
+                "has_media": true,
+                "media": [
+                    {
+                        "id": 140,
+                        "model_type": "App\\Models\\Extra",
+                        "model_id": 9,
+                        "collection_name": "image",
+                        "name": "extra3",
+                        "file_name": "extra3.jpg",
+                        "mime_type": "image/jpeg",
+                        "disk": "public",
+                        "size": 19323,
+                        "manipulations": [],
+                        "custom_properties": {
+                            "uuid": "09f3a00a-d451-46d0-b200-f33fb09fcdf5",
+                            "generated_conversions": {
+                                "thumb": true,
+                                "icon": true
+                            }
+                        },
+                        "responsive_images": [],
+                        "order_column": 138,
+                        "created_at": "2019-10-18 11:38:44",
+                        "updated_at": "2019-10-18 11:38:44",
+                        "url": "https://multi-restaurants.smartersvision.com/storage/app/public/140/extra3.jpg",
+                        "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/140/conversions/extra3-thumb.jpg",
+                        "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/140/conversions/extra3-icon.jpg",
+                        "formated_size": "18.9 KB"
+                    }
+                ]
+            }
+        ],
+        "extra_groups": [],
+        "food_reviews": [
+            {
+                "id": 3,
+                "review": "<p>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br></p>",
+                "rate": 4,
+                "user_id": 19,
+                "food_id": 3,
+                "created_at": "2019-10-17 22:12:11",
+                "updated_at": "2019-10-17 22:12:11",
+                "custom_fields": [],
+                "user": {
+                    "id": 19,
+                    "name": "Charles W. Abeyta",
+                    "email": "client@demo.com",
+                    "api_token": "fXLu7VeYgXDu82SkMxlLPG1mCAXc4EBIx6O5isgYVIKFQiHah0xiOHmzNsBv",
+                    "created_at": "2019-10-12 21:31:26",
+                    "updated_at": "2021-08-02 03:21:48",
+                    "braintree_id": null,
+                    "paypal_email": null,
+                    "stripe_id": null,
+                    "card_brand": null,
+                    "card_last_four": null,
+                    "trial_ends_at": null,
+                    "device_token": "cTkDzl5NRG6XNiXW7JC8CY:APA91bF_FnabVTKIJPUBrx4gIVGFcdpuymo-hLOXJUjb6Buf3LUJVSk_HsvYQSzyke_F2kLBvsEaJexIQugXbRAAv-IBuKTa92SW7lw0sDwqHi3cdAHXoJlBTbZQ0msxMNT6rAjCTTmx",
+                    "custom_fields": {
+                        "phone": {
+                            "value": "+1 098-6543-236",
+                            "view": "+1 098-6543-236",
+                            "name": "phone"
+                        },
+                        "bio": {
+                            "value": "Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Tortor pretium viverra suspendisse",
+                            "view": "Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Tortor pretium viverra suspendisse",
+                            "name": "bio"
+                        },
+                        "address": {
+                            "value": "1850 Big Elm Kansas City, MO 64106",
+                            "view": "1850 Big Elm Kansas City, MO 64106",
+                            "name": "address"
+                        }
+                    },
+                    "has_media": true,
+                    "media": [
+                        {
+                            "id": 65,
+                            "model_type": "App\\Models\\User",
+                            "model_id": 19,
+                            "collection_name": "avatar",
+                            "name": "api",
+                            "file_name": "api.png",
+                            "mime_type": "image/png",
+                            "disk": "public",
+                            "size": 796,
+                            "manipulations": [],
+                            "custom_properties": {
+                                "uuid": "$2y$10$MhJMEFqv6leUxN7oOApXHuUStBVmAbec.it7g1HRt63G7xdNwmmRK",
+                                "generated_conversions": {
+                                    "thumb": true,
+                                    "icon": true
+                                }
+                            },
+                            "responsive_images": [],
+                            "order_column": 63,
+                            "created_at": "2019-10-12 21:31:27",
+                            "updated_at": "2019-10-12 21:31:28",
+                            "url": "https://multi-restaurants.smartersvision.com/storage/app/public/65/api.png",
+                            "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/65/conversions/api-thumb.jpg",
+                            "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/65/conversions/api-icon.jpg",
+                            "formated_size": "796 B"
+                        }
+                    ]
+                }
+            }
+        ],
+        "media": [
+            {
+                "id": 96,
+                "model_type": "App\\Models\\Food",
+                "model_id": 3,
+                "collection_name": "image",
+                "name": "margherita-pizza-993274_1280",
+                "file_name": "margherita-pizza-993274_1280.jpg",
+                "mime_type": "image/jpeg",
+                "disk": "public",
+                "size": 237678,
+                "manipulations": [],
+                "custom_properties": {
+                    "uuid": "793eed7b-c814-441c-9bed-05f325a3c40f",
+                    "generated_conversions": {
+                        "thumb": true,
+                        "icon": true
+                    }
+                },
+                "responsive_images": [],
+                "order_column": 94,
+                "created_at": "2019-10-17 22:06:52",
+                "updated_at": "2019-10-17 22:06:52",
+                "url": "https://multi-restaurants.smartersvision.com/storage/app/public/96/margherita-pizza-993274_1280.jpg",
+                "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/96/conversions/margherita-pizza-993274_1280-thumb.jpg",
+                "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/96/conversions/margherita-pizza-993274_1280-icon.jpg",
+                "formated_size": "232.1 KB"
+            }
+        ]
+    },
+    "message": "Food retrieved successfully"
+}

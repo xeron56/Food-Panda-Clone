@@ -5,7 +5,8 @@ import '../helpers/helper.dart';
 import '../models/food.dart';
 import '../models/route_argument.dart';
 
-class FoodItemWidget extends StatelessWidget {
+class   FoodItemWidget extends StatelessWidget {
+  // getting value from function 
   final String heroTag;
   final Food food;
 

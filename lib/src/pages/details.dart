@@ -139,6 +139,8 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                   this._selectTab(2);
                 },
               ),
+
+              //restaurent menue button
               FlatButton(
                 onPressed: () {
                   this._selectTab(3);

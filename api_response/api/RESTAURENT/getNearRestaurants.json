@@ -1,6 +1,6 @@
 
 //GET
-//https://multi-restaurants.smartersvision.com/api/restaurants?limit=6&cuisines%5B%5D=1&cuisines%5B%5D=2&searchJoin=and&myLon=45.366&myLat=15.5554&areaLon=55.8885&areaLat=23.36
+//https://localhost/api/restaurants?limit=6&cuisines%5B%5D=1&cuisines%5B%5D=2&searchJoin=and&myLon=45.366&myLat=15.5554&areaLon=55.8885&areaLat=23.36
 // wILL SHOW THE NEARST RESTAURENTS
 {
     "success": true,
@@ -52,9 +52,9 @@
                     "order_column": 67,
                     "created_at": "2019-10-16 18:34:20",
                     "updated_at": "2019-10-16 18:34:20",
-                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/69/restaurant-3597677_1280.jpg",
-                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
-                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
+                    "url": "https://localhost/storage/app/public/69/restaurant-3597677_1280.jpg",
+                    "thumb": "https://localhost/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
+                    "icon": "https://localhost/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
                     "formated_size": "361.3 KB"
                 }
             ]
@@ -106,9 +106,9 @@
                     "order_column": 73,
                     "created_at": "2019-10-16 18:38:18",
                     "updated_at": "2019-10-16 18:38:18",
-                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/75/restaurant-1837150_1920.jpg",
-                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/75/conversions/restaurant-1837150_1920-thumb.jpg",
-                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/75/conversions/restaurant-1837150_1920-icon.jpg",
+                    "url": "https://localhost/storage/app/public/75/restaurant-1837150_1920.jpg",
+                    "thumb": "https://localhost/storage/app/public/75/conversions/restaurant-1837150_1920-thumb.jpg",
+                    "icon": "https://localhost/storage/app/public/75/conversions/restaurant-1837150_1920-icon.jpg",
                     "formated_size": "528 KB"
                 }
             ]
@@ -161,9 +161,9 @@
                     "order_column": 157,
                     "created_at": "2021-07-31 10:23:40",
                     "updated_at": "2021-07-31 10:23:40",
-                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/167/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A1%D9%A0%D9%A7%D9%A3%D9%A1_%D9%A1%D9%A1%D9%A4%D9%A4%D9%A5%D9%A1.jpg",
-                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/167/conversions/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A1%D9%A0%D9%A7%D9%A3%D9%A1_%D9%A1%D9%A1%D9%A4%D9%A4%D9%A5%D9%A1-thumb.jpg",
-                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/167/conversions/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A1%D9%A0%D9%A7%D9%A3%D9%A1_%D9%A1%D9%A1%D9%A4%D9%A4%D9%A5%D9%A1-icon.jpg",
+                    "url": "https://localhost/storage/app/public/167/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A1%D9%A0%D9%A7%D9%A3%D9%A1_%D9%A1%D9%A1%D9%A4%D9%A4%D9%A5%D9%A1.jpg",
+                    "thumb": "https://localhost/storage/app/public/167/conversions/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A1%D9%A0%D9%A7%D9%A3%D9%A1_%D9%A1%D9%A1%D9%A4%D9%A4%D9%A5%D9%A1-thumb.jpg",
+                    "icon": "https://localhost/storage/app/public/167/conversions/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A1%D9%A0%D9%A7%D9%A3%D9%A1_%D9%A1%D9%A1%D9%A4%D9%A4%D9%A5%D9%A1-icon.jpg",
                     "formated_size": "271.5 KB"
                 }
             ]

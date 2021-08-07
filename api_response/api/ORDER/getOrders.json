@@ -1,4 +1,4 @@
-//https://multi-restaurants.smartersvision.com/api/orders?api_token=huy0yC9vAOan0jtxtuvVaZbg3tBKS8d5UXwJ964mE1OaLQjWL3O0S88Xo0Gm&with=user;foodOrders;foodOrders.food;foodOrders.extras;orderStatus;payment&search=user.id:54&searchFields=user.id:=&orderBy=id&sortedBy=desc
+//https://localhost/api/orders?api_token=huy0yC9vAOan0jtxtuvVaZbg3tBKS8d5UXwJ964mE1OaLQjWL3O0S88Xo0Gm&with=user;foodOrders;foodOrders.food;foodOrders.extras;orderStatus;payment&search=user.id:54&searchFields=user.id:=&orderBy=id&sortedBy=desc
 //GET
 // gET ORDERS LIST
 
@@ -115,9 +115,9 @@
                                     "order_column": 67,
                                     "created_at": "2019-10-16 18:34:20",
                                     "updated_at": "2019-10-16 18:34:20",
-                                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/69/restaurant-3597677_1280.jpg",
-                                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
-                                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
+                                    "url": "https://localhost/storage/app/public/69/restaurant-3597677_1280.jpg",
+                                    "thumb": "https://localhost/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
+                                    "icon": "https://localhost/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
                                     "formated_size": "361.3 KB"
                                 }
                             ]
@@ -145,9 +145,9 @@
                                 "order_column": 46,
                                 "created_at": "2019-08-30 11:21:43",
                                 "updated_at": "2019-08-30 11:21:43",
-                                "url": "https://multi-restaurants.smartersvision.com/storage/app/public/48/food1.jpg",
-                                "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/48/conversions/food1-thumb.jpg",
-                                "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/48/conversions/food1-icon.jpg",
+                                "url": "https://localhost/storage/app/public/48/food1.jpg",
+                                "thumb": "https://localhost/storage/app/public/48/conversions/food1-thumb.jpg",
+                                "icon": "https://localhost/storage/app/public/48/conversions/food1-icon.jpg",
                                 "formated_size": "135 KB"
                             }
                         ]
@@ -215,9 +215,9 @@
                                     "order_column": 67,
                                     "created_at": "2019-10-16 18:34:20",
                                     "updated_at": "2019-10-16 18:34:20",
-                                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/69/restaurant-3597677_1280.jpg",
-                                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
-                                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
+                                    "url": "https://localhost/storage/app/public/69/restaurant-3597677_1280.jpg",
+                                    "thumb": "https://localhost/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
+                                    "icon": "https://localhost/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
                                     "formated_size": "361.3 KB"
                                 }
                             ]
@@ -245,9 +245,9 @@
                                 "order_column": 115,
                                 "created_at": "2019-10-18 09:57:54",
                                 "updated_at": "2019-10-18 09:57:54",
-                                "url": "https://multi-restaurants.smartersvision.com/storage/app/public/117/soup-1503117_1280.jpg",
-                                "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/117/conversions/soup-1503117_1280-thumb.jpg",
-                                "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/117/conversions/soup-1503117_1280-icon.jpg",
+                                "url": "https://localhost/storage/app/public/117/soup-1503117_1280.jpg",
+                                "thumb": "https://localhost/storage/app/public/117/conversions/soup-1503117_1280-thumb.jpg",
+                                "icon": "https://localhost/storage/app/public/117/conversions/soup-1503117_1280-icon.jpg",
                                 "formated_size": "235.1 KB"
                             }
                         ]
@@ -315,9 +315,9 @@
                                     "order_column": 67,
                                     "created_at": "2019-10-16 18:34:20",
                                     "updated_at": "2019-10-16 18:34:20",
-                                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/69/restaurant-3597677_1280.jpg",
-                                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
-                                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
+                                    "url": "https://localhost/storage/app/public/69/restaurant-3597677_1280.jpg",
+                                    "thumb": "https://localhost/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
+                                    "icon": "https://localhost/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
                                     "formated_size": "361.3 KB"
                                 }
                             ]
@@ -345,9 +345,9 @@
                                 "order_column": 99,
                                 "created_at": "2019-10-18 09:15:19",
                                 "updated_at": "2019-10-18 09:15:19",
-                                "url": "https://multi-restaurants.smartersvision.com/storage/app/public/101/pizza-2802332_1280.jpg",
-                                "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/101/conversions/pizza-2802332_1280-thumb.jpg",
-                                "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/101/conversions/pizza-2802332_1280-icon.jpg",
+                                "url": "https://localhost/storage/app/public/101/pizza-2802332_1280.jpg",
+                                "thumb": "https://localhost/storage/app/public/101/conversions/pizza-2802332_1280-thumb.jpg",
+                                "icon": "https://localhost/storage/app/public/101/conversions/pizza-2802332_1280-icon.jpg",
                                 "formated_size": "440.2 KB"
                             }
                         ]

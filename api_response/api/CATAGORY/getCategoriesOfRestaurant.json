@@ -1,6 +1,6 @@
 
 //GET 
-//https://multi-restaurants.smartersvision.com/api/categories?restaurant_id=2
+//https://localhost/api/categories?restaurant_id=2
 
 //Get food catagory of restaurent 
 {
@@ -37,9 +37,9 @@
                     "order_column": 131,
                     "created_at": "2019-10-18 11:26:50",
                     "updated_at": "2019-10-18 11:26:50",
-                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/133/milk.svg",
-                    "thumb": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
-                    "icon": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "url": "https://localhost/storage/app/public/133/milk.svg",
+                    "thumb": "https://localhost/images/icons/svg.png",
+                    "icon": "https://localhost/images/icons/svg.png",
                     "formated_size": "3.1 KB"
                 }
             ]
@@ -75,9 +75,9 @@
                     "order_column": 129,
                     "created_at": "2019-10-18 11:25:54",
                     "updated_at": "2019-10-18 11:25:54",
-                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/131/hamburguer-1.svg",
-                    "thumb": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
-                    "icon": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "url": "https://localhost/storage/app/public/131/hamburguer-1.svg",
+                    "thumb": "https://localhost/images/icons/svg.png",
+                    "icon": "https://localhost/images/icons/svg.png",
                     "formated_size": "4.1 KB"
                 }
             ]
@@ -113,9 +113,9 @@
                     "order_column": 137,
                     "created_at": "2019-10-18 11:29:59",
                     "updated_at": "2019-10-18 11:29:59",
-                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/139/food.svg",
-                    "thumb": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
-                    "icon": "https://multi-restaurants.smartersvision.com/images/icons/svg.png",
+                    "url": "https://localhost/storage/app/public/139/food.svg",
+                    "thumb": "https://localhost/images/icons/svg.png",
+                    "icon": "https://localhost/images/icons/svg.png",
                     "formated_size": "3.4 KB"
                 }
             ]

@@ -2,7 +2,7 @@
 //get
 //search bar
 //search food with name
-//https://multi-restaurants.smartersvision.com/api/foods?search=name%3Apizza%3Bdescription%3Apizza&searchFields=name%3Alike%3Bdescription%3Alike&limit=5
+//https://localhost/api/foods?search=name%3Apizza%3Bdescription%3Apizza&searchFields=name%3Alike%3Bdescription%3Alike&limit=5
 
 {
     "success": true,
@@ -59,9 +59,9 @@
                         "order_column": 69,
                         "created_at": "2019-10-16 18:35:34",
                         "updated_at": "2019-10-16 18:35:34",
-                        "url": "https://multi-restaurants.smartersvision.com/storage/app/public/71/restaurant-2649620_1280.jpg",
-                        "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/71/conversions/restaurant-2649620_1280-thumb.jpg",
-                        "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/71/conversions/restaurant-2649620_1280-icon.jpg",
+                        "url": "https://localhost/storage/app/public/71/restaurant-2649620_1280.jpg",
+                        "thumb": "https://localhost/storage/app/public/71/conversions/restaurant-2649620_1280-thumb.jpg",
+                        "icon": "https://localhost/storage/app/public/71/conversions/restaurant-2649620_1280-icon.jpg",
                         "formated_size": "431.2 KB"
                     }
                 ]
@@ -89,9 +89,9 @@
                     "order_column": 94,
                     "created_at": "2019-10-17 22:06:52",
                     "updated_at": "2019-10-17 22:06:52",
-                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/96/margherita-pizza-993274_1280.jpg",
-                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/96/conversions/margherita-pizza-993274_1280-thumb.jpg",
-                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/96/conversions/margherita-pizza-993274_1280-icon.jpg",
+                    "url": "https://localhost/storage/app/public/96/margherita-pizza-993274_1280.jpg",
+                    "thumb": "https://localhost/storage/app/public/96/conversions/margherita-pizza-993274_1280-thumb.jpg",
+                    "icon": "https://localhost/storage/app/public/96/conversions/margherita-pizza-993274_1280-icon.jpg",
                     "formated_size": "232.1 KB"
                 }
             ]
@@ -148,9 +148,9 @@
                         "order_column": 69,
                         "created_at": "2019-10-16 18:35:34",
                         "updated_at": "2019-10-16 18:35:34",
-                        "url": "https://multi-restaurants.smartersvision.com/storage/app/public/71/restaurant-2649620_1280.jpg",
-                        "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/71/conversions/restaurant-2649620_1280-thumb.jpg",
-                        "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/71/conversions/restaurant-2649620_1280-icon.jpg",
+                        "url": "https://localhost/storage/app/public/71/restaurant-2649620_1280.jpg",
+                        "thumb": "https://localhost/storage/app/public/71/conversions/restaurant-2649620_1280-thumb.jpg",
+                        "icon": "https://localhost/storage/app/public/71/conversions/restaurant-2649620_1280-icon.jpg",
                         "formated_size": "431.2 KB"
                     }
                 ]
@@ -178,9 +178,9 @@
                     "order_column": 97,
                     "created_at": "2019-10-18 09:09:53",
                     "updated_at": "2019-10-18 09:09:53",
-                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/99/pizza-2000615_1280.jpg",
-                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/99/conversions/pizza-2000615_1280-thumb.jpg",
-                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/99/conversions/pizza-2000615_1280-icon.jpg",
+                    "url": "https://localhost/storage/app/public/99/pizza-2000615_1280.jpg",
+                    "thumb": "https://localhost/storage/app/public/99/conversions/pizza-2000615_1280-thumb.jpg",
+                    "icon": "https://localhost/storage/app/public/99/conversions/pizza-2000615_1280-icon.jpg",
                     "formated_size": "327.6 KB"
                 }
             ]
@@ -237,9 +237,9 @@
                         "order_column": 67,
                         "created_at": "2019-10-16 18:34:20",
                         "updated_at": "2019-10-16 18:34:20",
-                        "url": "https://multi-restaurants.smartersvision.com/storage/app/public/69/restaurant-3597677_1280.jpg",
-                        "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
-                        "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
+                        "url": "https://localhost/storage/app/public/69/restaurant-3597677_1280.jpg",
+                        "thumb": "https://localhost/storage/app/public/69/conversions/restaurant-3597677_1280-thumb.jpg",
+                        "icon": "https://localhost/storage/app/public/69/conversions/restaurant-3597677_1280-icon.jpg",
                         "formated_size": "361.3 KB"
                     }
                 ]
@@ -267,9 +267,9 @@
                     "order_column": 99,
                     "created_at": "2019-10-18 09:15:19",
                     "updated_at": "2019-10-18 09:15:19",
-                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/101/pizza-2802332_1280.jpg",
-                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/101/conversions/pizza-2802332_1280-thumb.jpg",
-                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/101/conversions/pizza-2802332_1280-icon.jpg",
+                    "url": "https://localhost/storage/app/public/101/pizza-2802332_1280.jpg",
+                    "thumb": "https://localhost/storage/app/public/101/conversions/pizza-2802332_1280-thumb.jpg",
+                    "icon": "https://localhost/storage/app/public/101/conversions/pizza-2802332_1280-icon.jpg",
                     "formated_size": "440.2 KB"
                 }
             ]
@@ -326,9 +326,9 @@
                         "order_column": 71,
                         "created_at": "2019-10-16 18:37:18",
                         "updated_at": "2019-10-16 18:37:18",
-                        "url": "https://multi-restaurants.smartersvision.com/storage/app/public/73/restaurant-449952_1280.jpg",
-                        "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/73/conversions/restaurant-449952_1280-thumb.jpg",
-                        "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/73/conversions/restaurant-449952_1280-icon.jpg",
+                        "url": "https://localhost/storage/app/public/73/restaurant-449952_1280.jpg",
+                        "thumb": "https://localhost/storage/app/public/73/conversions/restaurant-449952_1280-thumb.jpg",
+                        "icon": "https://localhost/storage/app/public/73/conversions/restaurant-449952_1280-icon.jpg",
                         "formated_size": "282.9 KB"
                     }
                 ]
@@ -356,9 +356,9 @@
                     "order_column": 101,
                     "created_at": "2019-10-18 09:16:17",
                     "updated_at": "2019-10-18 09:16:17",
-                    "url": "https://multi-restaurants.smartersvision.com/storage/app/public/103/pizza-1081543_1280.jpg",
-                    "thumb": "https://multi-restaurants.smartersvision.com/storage/app/public/103/conversions/pizza-1081543_1280-thumb.jpg",
-                    "icon": "https://multi-restaurants.smartersvision.com/storage/app/public/103/conversions/pizza-1081543_1280-icon.jpg",
+                    "url": "https://localhost/storage/app/public/103/pizza-1081543_1280.jpg",
+                    "thumb": "https://localhost/storage/app/public/103/conversions/pizza-1081543_1280-thumb.jpg",
+                    "icon": "https://localhost/storage/app/public/103/conversions/pizza-1081543_1280-icon.jpg",
                     "formated_size": "171.4 KB"
                 }
             ]

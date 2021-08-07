@@ -1,4 +1,4 @@
 
 //IS FOOD IS FAVORITE OR NOT of user
 //GET
-//https://multi-restaurants.smartersvision.com/api/favorites/exist?api_token=huy0yC9vAOan0jtxtuvVaZbg3tBKS8d5UXwJ964mE1OaLQjWL3O0S88Xo0Gm&food_id=5&user_id=54
+//https://localhost/api/favorites/exist?api_token=huy0yC9vAOan0jtxtuvVaZbg3tBKS8d5UXwJ964mE1OaLQjWL3O0S88Xo0Gm&food_id=5&user_id=54

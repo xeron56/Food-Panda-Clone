@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/src/elements/CardWidget.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
 import '../../generated/l10n.dart';
@@ -165,9 +166,18 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                       ],
                     ),
                   );
-                  //top restaurants card 
+                  
+                  //
+                  // TOP RESTAURANTS CARD
+                  //
+
+                  
                 case 'top_restaurants':
                   return CardsCarouselWidget(restaurantsList: _con.topRestaurants, heroTag: 'home_top_restaurants');
+                
+                case 'top_restaurants':
+                  return  CardWidget(restaurant: _con.topRestaurants.elementAt(index), heroTag: 'home_top_restaurants');
+
                 case 'trending_week_heading':
                   return ListTile(
                     dense: true,

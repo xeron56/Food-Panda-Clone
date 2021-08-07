@@ -41,6 +41,7 @@ class SplashScreenState extends StateMVC<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _con.scaffoldKey,
+      backgroundColor: Color(0xffff4200),
       body: Container(
         decoration: BoxDecoration(
           color: Theme.of(context).scaffoldBackgroundColor,
@@ -52,7 +53,7 @@ class SplashScreenState extends StateMVC<SplashScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Image.asset(
-                'assets/img/logo.png',
+                'assets/img/foodstick_logo.png',
                 width: 150,
                 fit: BoxFit.cover,
               ),

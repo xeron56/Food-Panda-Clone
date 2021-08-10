@@ -3,8 +3,22 @@ import 'package:food_delivery_app/src/screen/booking/book_page.dart';
 import 'package:food_delivery_app/src/screen/restaurent/qrcode_scan.dart';
 
 class TestPage extends StatelessWidget {
-  const TestPage({Key key}) : super(key: key);
+  const TestPage({
+    
+    this.resName,
+    this.resimage,
+    this.deliveryTime,
+    this.rating,
+    this.openTime,
+    Key key
+    
+    }) : super(key: key);
 
+    final resName;
+    final resimage;
+    final deliveryTime;
+    final rating;
+    final openTime;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -42,7 +56,7 @@ class TestPage extends StatelessWidget {
                                       decoration: BoxDecoration(
                                         image: DecorationImage(
                                           image: NetworkImage(
-                                            "https://resource-hosting.s3.us-west-1.amazonaws.com/_fHi_tyO-[object Object]",
+                                            resimage,
                                           ),
                                           fit: BoxFit.cover,
                                         ),
@@ -112,7 +126,7 @@ class TestPage extends StatelessWidget {
                                     SizedBox(
                                       width: 279,
                                       child: Text(
-                                        "Chiniese Recipe - Bashtola Delivery",
+                                        resName,
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                           color: Colors.white,
@@ -186,7 +200,8 @@ class TestPage extends StatelessWidget {
                                         ),
                                         SizedBox(width: 4),
                                         Text(
-                                          "3.5 (7)",
+                                          //"3.5 (7)",
+                                          rating,
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 14,

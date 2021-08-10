@@ -25,8 +25,8 @@ class _FilterWidgetState extends StateMVC<FilterWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-      child: SafeArea(
+    return Scaffold(
+      body: SafeArea(
         child: Column(
           children: <Widget>[
             Padding(
@@ -113,7 +113,8 @@ class _FilterWidgetState extends StateMVC<FilterWidget> {
                       ? CircularLoadingWidget(height: 100)
                       : ExpansionTile(
                           title: Text(S.of(context).cuisines),
-                          children: List.generate(_con.cuisines.length, (index) {
+                          children:
+                              List.generate(_con.cuisines.length, (index) {
                             return CheckboxListTile(
                               controlAffinity: ListTileControlAffinity.trailing,
                               value: _con.cuisines.elementAt(index).selected,
@@ -134,19 +135,157 @@ class _FilterWidgetState extends StateMVC<FilterWidget> {
               ),
             ),
             SizedBox(height: 15),
-            FlatButton(
-              onPressed: () {
-                _con.saveFilter().whenComplete(() {
-                  widget.onFilter(_con.filter);
-                });
-              },
-              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-              color: Theme.of(context).accentColor,
-              shape: StadiumBorder(),
-              child: Text(
-                S.of(context).apply_filters,
-                textAlign: TextAlign.start,
-                style: TextStyle(color: Theme.of(context).primaryColor),
+            // FlatButton(
+            // onPressed: () {
+            //   _con.saveFilter().whenComplete(() {
+            //     widget.onFilter(_con.filter);
+            //   });
+            // },
+            //   padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+            //   color: Theme.of(context).accentColor,
+            //   shape: StadiumBorder(),
+            //   child: Text(
+            //     S.of(context).apply_filters,
+            //     textAlign: TextAlign.start,
+            //     style: TextStyle(color: Theme.of(context).primaryColor),
+            //   ),
+            // ),
+            Container(
+              child: Container(
+                child: Container(
+                  child: Row(
+                    children: [
+                      FlatButton(
+                        onPressed: () {
+                          _con.clearFilter();
+                        },
+                        child: Text(
+                          "Clear all",
+                        ),
+                        textColor: Color(
+                          0xffff4200,
+                        ),
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(
+                            30,
+                          ),
+                        ),
+                        height: 51,
+                        minWidth: 118,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+
+                      //
+                      // FILTER APPLY BOTTON
+                      //
+
+                      GestureDetector(
+                          onTap: () {
+                            _con.saveFilter().whenComplete(() {
+                              widget.onFilter(_con.filter);
+                            });
+                          },
+                          child: Container(
+                            child: Container(
+                              child: Row(
+                                children: [
+                                  Container(
+                                    child: SizedBox(
+                                      child: Text(
+                                        "99",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w500,
+                                          fontFamily: "Poppins",
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      width: 18,
+                                    ),
+                                    padding: EdgeInsets.all(
+                                      7,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(
+                                        20,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Text(
+                                    "Apply  Filter",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w400,
+                                      fontFamily: "Poppins",
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ],
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.min,
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 43,
+                                vertical: 10,
+                              ),
+                              decoration: BoxDecoration(
+                                color: Color(
+                                  0xffff4200,
+                                ),
+                                borderRadius: BorderRadius.circular(
+                                  30,
+                                ),
+                              ),
+                            ),
+                          ))
+                    ],
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                  ),
+                ),
+              ),
+              width: MediaQuery.of(context).size.width,
+              padding: EdgeInsets.all(
+                20,
+              ),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(
+                    0,
+                  ),
+                  topRight: Radius.circular(
+                    0,
+                  ),
+                  bottomLeft: Radius.circular(
+                    20,
+                  ),
+                  bottomRight: Radius.circular(
+                    20,
+                  ),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color(
+                      0xa000000,
+                    ),
+                    offset: Offset(
+                      0,
+                      -4,
+                    ),
+                    blurRadius: 6,
+                  ),
+                ],
               ),
             ),
             SizedBox(height: 15)

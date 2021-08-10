@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/src/elements/ShoppingCartButtonWidget.dart';
+import 'package:food_delivery_app/src/models/route_argument.dart';
 
 
 import 'package:food_delivery_app/src/screen/profile/change_password_modal.dart';
@@ -16,6 +18,26 @@ class _MyProfileState extends State<MyProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+      leading: new IconButton(
+          icon: new Icon(Icons.arrow_back, color: Theme.of(context).hintColor),
+         // onPressed: () => Navigator.of(context).pushNamed('/Details', arguments: RouteArgument(id: '0', param: _con.restaurant.id, heroTag: 'menu_tab')),
+          onPressed: () =>Navigator.pop(context),
+        ),
+        title: Text(
+           '',
+          overflow: TextOverflow.fade,
+          softWrap: false,
+          style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 0)),
+        ),
+         actions: <Widget>[
+          new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Container(
           child: Column(
@@ -26,81 +48,91 @@ class _MyProfileState extends State<MyProfile> {
               SizedBox(
                 height: 15,
               ),
-              Container(
-                child: Container(
-                  child: Row(
-                    children: [
-                      /// Detected as Icon
-                      /// FIXME: Check your design. this is an icon of node "Frame 810". we couldn't any matching flutter native icon, so we uploaded the asset to the cloud, load from it.
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pop(context);
-                        },
-                        child: Image.network(
-                          "https://resource-hosting.s3.us-west-1.amazonaws.com/tbIqljE9-[object Object]",
-                          width: 35,
-                          height: 35,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      SizedBox(
-                        child: Text(
-                          "My profile",
-                          style: TextStyle(
-                            color: Color(
-                              0xff929292,
-                            ),
-                            fontSize: 14,
-                            fontWeight: FontWeight.w400,
-                            fontFamily: "Poppins",
-                          ),
-                        ),
-                        width: 256,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
 
-                      /// Detected as Icon
-                      /// FIXME: Check your design. this is an icon of node "Icons". we couldn't any matching flutter native icon, so we uploaded the asset to the cloud, load from it.
-                      Image.network(
-                        "https://resource-hosting.s3.us-west-1.amazonaws.com/tG74HUe8-[object Object]",
-                        width: 24,
-                        height: 24,
-                        fit: BoxFit.cover,
-                      ),
-                    ],
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                  ),
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 11,
-                  ),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                  ),
-                ),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(
-                        0xa000000,
-                      ),
-                      offset: Offset(
-                        0,
-                        4,
-                      ),
-                      blurRadius: 6,
-                    ),
-                  ],
-                ),
-              ),
+
+              //
+              // APPBAR
+              //
+
+              
+              // Container(
+              //   child: Container(
+              //     child: Row(
+              //       children: [
+              //         /// Detected as Icon
+              //         /// FIXME: Check your design. this is an icon of node "Frame 810". we couldn't any matching flutter native icon, so we uploaded the asset to the cloud, load from it.
+              //         GestureDetector(
+              //           onTap: () {
+              //             Navigator.pop(context);
+              //           },
+              //           child: Image.network(
+              //             "https://resource-hosting.s3.us-west-1.amazonaws.com/tbIqljE9-[object Object]",
+              //             width: 35,
+              //             height: 35,
+              //             fit: BoxFit.cover,
+              //           ),
+              //         ),
+              //         SizedBox(
+              //           width: 10,
+              //         ),
+              //         SizedBox(
+              //           child: Text(
+              //             "My profile",
+              //             style: TextStyle(
+              //               color: Color(
+              //                 0xff929292,
+              //               ),
+              //               fontSize: 14,
+              //               fontWeight: FontWeight.w400,
+              //               fontFamily: "Poppins",
+              //             ),
+              //           ),
+              //           width: 256,
+              //         ),
+              //         SizedBox(
+              //           width: 10,
+              //         ),
+
+              //         /// Detected as Icon
+              //         /// FIXME: Check your design. this is an icon of node "Icons". we couldn't any matching flutter native icon, so we uploaded the asset to the cloud, load from it.
+              //         Image.network(
+              //           "https://resource-hosting.s3.us-west-1.amazonaws.com/tG74HUe8-[object Object]",
+              //           width: 24,
+              //           height: 24,
+              //           fit: BoxFit.cover,
+              //         ),
+              //       ],
+              //       mainAxisAlignment: MainAxisAlignment.start,
+              //       crossAxisAlignment: CrossAxisAlignment.center,
+              //       mainAxisSize: MainAxisSize.min,
+              //     ),
+              //     padding: EdgeInsets.symmetric(
+              //       horizontal: 20,
+              //       vertical: 11,
+              //     ),
+              //     decoration: BoxDecoration(
+              //       color: Colors.white,
+              //     ),
+              //   ),
+              //   decoration: BoxDecoration(
+              //     color: Colors.white,
+              //     boxShadow: [
+              //       BoxShadow(
+              //         color: Color(
+              //           0xa000000,
+              //         ),
+              //         offset: Offset(
+              //           0,
+              //           4,
+              //         ),
+              //         blurRadius: 6,
+              //       ),
+              //     ],
+              //   ),
+              // ),
+
+
+
               SizedBox(
                 height: 30,
               ),

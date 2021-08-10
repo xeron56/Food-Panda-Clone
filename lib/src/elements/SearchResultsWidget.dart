@@ -62,6 +62,7 @@ class _SearchResultWidgetState extends StateMVC<SearchResultWidget> {
           ),
           Padding(
             padding: const EdgeInsets.all(20),
+            //circular shape textbox
             //search results text field
             child: TextField(
               onSubmitted: (text) async {
@@ -70,6 +71,7 @@ class _SearchResultWidgetState extends StateMVC<SearchResultWidget> {
               },
               autofocus: true,
               decoration: InputDecoration(
+                
                 contentPadding: EdgeInsets.all(12),
                 hintText: S.of(context).search_for_restaurants_or_foods,
                 hintStyle: Theme.of(context).textTheme.caption.merge(TextStyle(fontSize: 14)),

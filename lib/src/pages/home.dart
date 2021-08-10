@@ -15,6 +15,7 @@ import '../elements/SearchBarWidget.dart';
 import '../elements/ShoppingCartButtonWidget.dart';
 import '../repository/settings_repository.dart' as settingsRepo;
 import '../repository/user_repository.dart';
+
 //which fatches all setting data from the server
 class HomeWidget extends StatefulWidget {
   final GlobalKey<ScaffoldState> parentScaffoldKey;
@@ -36,28 +37,147 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: new IconButton(
-          icon: new Icon(Icons.sort, color: Theme.of(context).hintColor),//drawer part of the appbar
-          onPressed: () => widget.parentScaffoldKey.currentState.openDrawer(),
+      //
+      // ─── APPBAR ──────────────────────────────────────────────────────
+      //
+
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(57.0), // here the desired height
+        child: AppBar(
+          // leading: new IconButton(
+          //   icon: new Icon(Icons.sort, color: Theme.of(context).hintColor),//drawer part of the appbar
+          //   onPressed: () => widget.parentScaffoldKey.currentState.openDrawer(),
+          // ),
+
+          automaticallyImplyLeading: false,
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          centerTitle: true,
+
+          // title: ValueListenableBuilder(
+          //   valueListenable: settingsRepo.setting,
+          //   builder: (context, value, child) {
+          //     return Text(
+          //       value.appName ?? S.of(context).home,
+          //       style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 1.3)),
+          //     );
+          //   },
+          // ),
+
+          title: Container(
+            width: MediaQuery.of(context).size.width,
+            color: Colors.white,
+            padding: const EdgeInsets.symmetric(
+              horizontal: 20,
+              vertical: 15,
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 21,
+                  height: 25,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Image.network(
+                    "https://resource-hosting.s3.us-west-1.amazonaws.com/NDNpJxdX-[object Object]",
+                    width: 21,
+                    height: 21,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: 210,
+                      height: 14,
+                      child: Text(
+                        "Dhaka",
+                        style: TextStyle(
+                          color: Color(0xffff4200),
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 3),
+                    SizedBox(
+                      width: 210,
+                      height: 10,
+                      child: Text(
+                        "Mirpur - 12",
+                        style: TextStyle(
+                          color: Color(0xff202020),
+                          fontSize: 10,
+                          fontFamily: "Poppins",
+                          fontWeight: FontWeight.w300,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(width: 10),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    GestureDetector(
+                      onTap: () => widget.parentScaffoldKey.currentState.openDrawer(),
+                      child: Container(
+                        width: 24,
+                        height: 24,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Image.network(
+                          "https://resource-hosting.s3.us-west-1.amazonaws.com/RUgpkHUR-[object Object]",
+                          width: 24,
+                          height: 24,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(width: 10),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 24,
+                      height: 24,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Image.network(
+                        "https://resource-hosting.s3.us-west-1.amazonaws.com/WMT2FktQ-[object Object]",
+                        width: 24,
+                        height: 24,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
         ),
-        automaticallyImplyLeading: false,
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-        title: ValueListenableBuilder(
-          valueListenable: settingsRepo.setting,
-          builder: (context, value, child) {
-            return Text(
-              value.appName ?? S.of(context).home,
-              style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 1.3)),
-            );
-          },
-        ),
-        actions: <Widget>[
-          new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
-        ],
       ),
+
+        // actions: <Widget>[
+      //   new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
+      // ],
+  
+
       body: RefreshIndicator(
         onRefresh: _con.refreshHome,
         child: SingleChildScrollView(
@@ -66,8 +186,10 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             mainAxisSize: MainAxisSize.max,
-            children: List.generate(settingsRepo.setting.value.homeSections.length, (index) {
-              String _homeSection = settingsRepo.setting.value.homeSections.elementAt(index);
+            children: List.generate(
+                settingsRepo.setting.value.homeSections.length, (index) {
+              String _homeSection =
+                  settingsRepo.setting.value.homeSections.elementAt(index);
               switch (_homeSection) {
                 case 'slider':
                   return HomeSliderWidget(slides: _con.slides);
@@ -82,7 +204,8 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                   );
                 case 'top_restaurants_heading':
                   return Padding(
-                    padding: const EdgeInsets.only(top: 15, left: 20, right: 20, bottom: 10),
+                    padding: const EdgeInsets.only(
+                        top: 15, left: 20, right: 20, bottom: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -103,10 +226,17 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                                 if (currentUser.value.apiToken == null) {
                                   _con.requestForCurrentLocation(context);
                                 } else {
-                                  var bottomSheetController = widget.parentScaffoldKey.currentState.showBottomSheet(
-                                    (context) => DeliveryAddressBottomSheetWidget(scaffoldKey: widget.parentScaffoldKey),
+                                  var bottomSheetController = widget
+                                      .parentScaffoldKey.currentState
+                                      .showBottomSheet(
+                                    (context) =>
+                                        DeliveryAddressBottomSheetWidget(
+                                            scaffoldKey:
+                                                widget.parentScaffoldKey),
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: new BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10)),
+                                      borderRadius: new BorderRadius.only(
+                                          topLeft: Radius.circular(10),
+                                          topRight: Radius.circular(10)),
                                     ),
                                   );
                                   bottomSheetController.closed.then((value) {
@@ -115,18 +245,27 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                                 }
                               },
                               child: Container(
-                                padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 10),
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 6, horizontal: 10),
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.all(Radius.circular(5)),
-                                  color: settingsRepo.deliveryAddress.value?.address == null
-                                      ? Theme.of(context).focusColor.withOpacity(0.1)
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                  color: settingsRepo
+                                              .deliveryAddress.value?.address ==
+                                          null
+                                      ? Theme.of(context)
+                                          .focusColor
+                                          .withOpacity(0.1)
                                       : Theme.of(context).accentColor,
                                 ),
                                 child: Text(
                                   S.of(context).delivery,
                                   style: TextStyle(
-                                      color:
-                                          settingsRepo.deliveryAddress.value?.address == null ? Theme.of(context).hintColor : Theme.of(context).primaryColor),
+                                      color: settingsRepo.deliveryAddress.value
+                                                  ?.address ==
+                                              null
+                                          ? Theme.of(context).hintColor
+                                          : Theme.of(context).primaryColor),
                                 ),
                               ),
                             ),
@@ -134,22 +273,32 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                             InkWell(
                               onTap: () {
                                 setState(() {
-                                  settingsRepo.deliveryAddress.value?.address = null;
+                                  settingsRepo.deliveryAddress.value?.address =
+                                      null;
                                 });
                               },
                               child: Container(
-                                padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 10),
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 6, horizontal: 10),
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.all(Radius.circular(5)),
-                                  color: settingsRepo.deliveryAddress.value?.address != null
-                                      ? Theme.of(context).focusColor.withOpacity(0.1)
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                  color: settingsRepo
+                                              .deliveryAddress.value?.address !=
+                                          null
+                                      ? Theme.of(context)
+                                          .focusColor
+                                          .withOpacity(0.1)
                                       : Theme.of(context).accentColor,
                                 ),
                                 child: Text(
                                   S.of(context).pickup,
                                   style: TextStyle(
-                                      color:
-                                          settingsRepo.deliveryAddress.value?.address != null ? Theme.of(context).hintColor : Theme.of(context).primaryColor),
+                                      color: settingsRepo.deliveryAddress.value
+                                                  ?.address !=
+                                              null
+                                          ? Theme.of(context).hintColor
+                                          : Theme.of(context).primaryColor),
                                 ),
                               ),
                             ),
@@ -159,24 +308,29 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                           Padding(
                             padding: const EdgeInsets.only(top: 12),
                             child: Text(
-                              S.of(context).near_to + " " + (settingsRepo.deliveryAddress.value?.address),
+                              S.of(context).near_to +
+                                  " " +
+                                  (settingsRepo.deliveryAddress.value?.address),
                               style: Theme.of(context).textTheme.caption,
                             ),
                           ),
                       ],
                     ),
                   );
-                  
-                  //
-                  // TOP RESTAURANTS CARD
-                  //
 
-                  
+                //
+                // TOP RESTAURANTS CARD
+                //
+
                 case 'top_restaurants':
-                  return CardsCarouselWidget(restaurantsList: _con.topRestaurants, heroTag: 'home_top_restaurants');
-                
+                  return CardsCarouselWidget(
+                      restaurantsList: _con.topRestaurants,
+                      heroTag: 'home_top_restaurants');
+
                 case 'top_restaurants':
-                  return  CardWidget(restaurant: _con.topRestaurants.elementAt(index), heroTag: 'home_top_restaurants');
+                  return CardWidget(
+                      restaurant: _con.topRestaurants.elementAt(index),
+                      heroTag: 'home_top_restaurants');
 
                 case 'trending_week_heading':
                   return ListTile(
@@ -197,7 +351,9 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                     ),
                   );
                 case 'trending_week':
-                  return FoodsCarouselWidget(foodsList: _con.trendingFoods, heroTag: 'home_food_carousel');
+                  return FoodsCarouselWidget(
+                      foodsList: _con.trendingFoods,
+                      heroTag: 'home_food_carousel');
                 case 'categories_heading':
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -220,7 +376,8 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                   );
                 case 'popular_heading':
                   return Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: ListTile(
                       dense: true,
                       contentPadding: EdgeInsets.symmetric(vertical: 0),

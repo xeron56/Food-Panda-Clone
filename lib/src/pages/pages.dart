@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/src/screen/profile/my_profile.dart';
+import 'package:food_delivery_app/src/screen/profile/profile_menu.dart';
 
 import '../elements/DrawerWidget.dart';
 import '../elements/FilterWidget.dart';
@@ -71,9 +73,10 @@ class _PagesWidgetState extends State<PagesWidget> {
               OrdersWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
         case 4:
-          widget.currentPage = MessagesWidget(
-              parentScaffoldKey: widget
-                  .scaffoldKey); //FavoritesWidget(parentScaffoldKey: widget.scaffoldKey);
+          widget.currentPage = ProfileMenu();
+          // widget.currentPage = MessagesWidget(
+          //     parentScaffoldKey: widget
+          //         .scaffoldKey); //FavoritesWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
       }
     });

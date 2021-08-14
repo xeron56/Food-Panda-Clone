@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/src/screen/booking/book_page.dart';
+import 'package:food_delivery_app/src/screen/booking/booking_home.dart';
 import 'package:food_delivery_app/src/screen/profile/my_profile.dart';
 import 'package:food_delivery_app/src/screen/profile/profile_menu.dart';
 
@@ -69,8 +71,9 @@ class _PagesWidgetState extends State<PagesWidget> {
               HomeWidget(parentScaffoldKey: widget.scaffoldKey); // home page
           break;
         case 3:
-          widget.currentPage =
-              OrdersWidget(parentScaffoldKey: widget.scaffoldKey);
+          // widget.currentPage =
+          //     OrdersWidget(parentScaffoldKey: widget.scaffoldKey);
+              widget.currentPage = BookingHome();
           break;
         case 4:
           widget.currentPage = ProfileMenu();

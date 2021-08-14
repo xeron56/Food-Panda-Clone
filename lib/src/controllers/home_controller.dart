@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:food_delivery_app/src/models/address.dart';
+import 'package:food_delivery_app/src/repository/search_repository.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 
 import '../helpers/helper.dart';
@@ -21,6 +23,9 @@ class HomeController extends ControllerMVC {
   List<Review> recentReviews = <Review>[];
   List<Food> trendingFoods = <Food>[];
 
+  List<Restaurant> restaurants = <Restaurant>[];
+  List<Food> foods = <Food>[];
+
   HomeController() {
     listenForTopRestaurants();
     listenForSlides();
@@ -28,6 +33,9 @@ class HomeController extends ControllerMVC {
     listenForCategories();
     listenForPopularRestaurants();
     listenForRecentReviews();
+//search controller added
+    listenForRestaurants();
+    listenForFoods();
   }
 
   Future<void> listenForSlides() async {
@@ -106,4 +114,55 @@ class HomeController extends ControllerMVC {
     await listenForPopularRestaurants();
     await listenForRecentReviews();
   }
+
+    //
+    // ─── SERACH FUNCTION ADDED ───────────────────────────────────────
+    //
+
+      
+
+ void listenForRestaurants({String search}) async {
+    if (search == null) {
+      search = await getRecentSearch();
+    }
+    Address _address = deliveryAddress.value;
+    final Stream<Restaurant> stream = await searchRestaurants(search, _address);
+    stream.listen((Restaurant _restaurant) {
+      setState(() => restaurants.add(_restaurant));
+    }, onError: (a) {
+      print(a);
+    }, onDone: () {});
+  }
+
+  void listenForFoods({String search}) async {
+    if (search == null) {
+      search = await getRecentSearch();
+    }
+    Address _address = deliveryAddress.value;
+    final Stream<Food> stream = await searchFoods(search, _address);
+    stream.listen((Food _food) {
+      setState(() => foods.add(_food));
+    }, onError: (a) {
+      print(a);
+    }, onDone: () {});
+  }
+
+  Future<void> refreshSearch(search) async {     
+    setState(() {
+      restaurants = <Restaurant>[];
+      foods = <Food>[];
+    });
+    listenForRestaurants(search: search);
+    listenForFoods(search: search);
+  }
+
+  void saveSearch(String search) {
+    setRecentSearch(search);
+  }
+
+
+
+
+
+
 }

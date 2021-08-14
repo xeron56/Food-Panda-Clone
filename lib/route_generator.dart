@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/src/pages/navbar_main.dart';
 
 import 'src/models/route_argument.dart';
 import 'src/pages/cart.dart';
@@ -17,7 +18,7 @@ import 'src/pages/languages.dart';
 import 'src/pages/login.dart';
 import 'src/pages/menu_list.dart';
 import 'src/pages/order_success.dart';
-import 'src/pages/pages.dart';
+import 'src/pages/navbar_main.dart';
 import 'src/pages/payment_methods.dart';
 import 'src/pages/paypal_payment.dart';
 import 'src/pages/profile.dart';

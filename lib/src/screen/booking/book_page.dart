@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/src/elements/ShoppingCartButtonWidget.dart';
 
 class BookingPage extends StatefulWidget {
   BookingPage({Key key}) : super(key: key);
@@ -11,6 +12,31 @@ class _BookingPageState extends State<BookingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+          appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+        leading: new IconButton(
+          icon: new Icon(Icons.arrow_back, color: Theme.of(context).hintColor),
+          // onPressed: () => Navigator.of(context).pushNamed('/Details', arguments: RouteArgument(id: '0', param: _con.restaurant.id, heroTag: 'menu_tab')),
+          onPressed: () => Navigator.pop(context),
+        ),
+        title: Text(
+          '',
+          overflow: TextOverflow.fade,
+          softWrap: false,
+          style: Theme.of(context)
+              .textTheme
+              .headline6
+              .merge(TextStyle(letterSpacing: 0)),
+        ),
+        actions: <Widget>[
+          new ShoppingCartButtonWidget(
+              iconColor: Theme.of(context).hintColor,
+              labelColor: Theme.of(context).accentColor),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Container(
           
@@ -20,7 +46,7 @@ class _BookingPageState extends State<BookingPage> {
               
               mainAxisAlignment: MainAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
                   child: Column(

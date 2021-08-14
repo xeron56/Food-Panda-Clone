@@ -6,18 +6,18 @@ import '../models/route_argument.dart';
 import 'CardWidget.dart';
 
 // ignore: must_be_immutable
-class CardsCarouselWidget extends StatefulWidget {
+class VerticalCardCarouselWidget extends StatefulWidget {
   List<Restaurant> restaurantsList;
   String heroTag;
   String direction;
 
-  CardsCarouselWidget({Key key, this.restaurantsList, this.heroTag, this.direction}) : super(key: key);
+  VerticalCardCarouselWidget({Key key, this.restaurantsList, this.heroTag, this.direction}) : super(key: key);
 
   @override
-  _CardsCarouselWidgetState createState() => _CardsCarouselWidgetState();
+  _VerticalCardCarouselWidgetState createState() => _VerticalCardCarouselWidgetState();
 }
 
-class _CardsCarouselWidgetState extends State<CardsCarouselWidget> {
+class _VerticalCardCarouselWidgetState extends State<VerticalCardCarouselWidget> {
   @override
   void initState() {
     super.initState();
@@ -30,7 +30,7 @@ class _CardsCarouselWidgetState extends State<CardsCarouselWidget> {
         : Container(
             height: 288,
             child: ListView.builder(
-              scrollDirection: Axis.horizontal,
+              scrollDirection: Axis.vertical,
               itemCount: widget.restaurantsList.length,
               itemBuilder: (context, index) {
                 return GestureDetector(

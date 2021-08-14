@@ -45,26 +45,29 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _con.scaffoldKey,
-      drawer: DrawerWidget(),
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-        automaticallyImplyLeading: false,
-        leading: new IconButton(
-          icon: new Icon(Icons.arrow_back, color: Theme.of(context).hintColor),
-          onPressed: () => Navigator.of(context).pushNamed('/Details', arguments: RouteArgument(id: '0', param: _con.restaurant.id, heroTag: 'menu_tab')),
-        ),
-        title: Text(
-          _con.restaurant?.name ?? '',
-          overflow: TextOverflow.fade,
-          softWrap: false,
-          style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 0)),
-        ),
-        actions: <Widget>[
-          new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
-        ],
-      ),
+      //drawer: DrawerWidget(),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.transparent,
+      //   elevation: 0,
+      //   centerTitle: true,
+      //   automaticallyImplyLeading: false,
+      //   leading: new IconButton(
+      //     icon: new Icon(Icons.arrow_back, color: Theme.of(context).hintColor),
+      //     onPressed: () => Navigator.of(context).pushNamed('/Details', arguments: RouteArgument(id: '0', param: _con.restaurant.id, heroTag: 'menu_tab')),
+      //   ),
+      //   title: Text(
+      //     _con.restaurant?.name ?? '',
+      //     overflow: TextOverflow.fade,
+      //     softWrap: false,
+      //     style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 0)),
+      //   ),
+      //   actions: <Widget>[
+      //     new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
+      //   ],
+      // ),
+
+
+
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(vertical: 10),
@@ -73,28 +76,37 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: SearchBarWidget(),
-            ),
-            ListTile(
-              dense: true,
-              contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              leading: Icon(
-                Icons.bookmark,
-                color: Theme.of(context).hintColor,
-              ),
-              title: Text(
-                S.of(context).featured_foods,
-                style: Theme.of(context).textTheme.headline4,
-              ),
-              subtitle: Text(
-                S.of(context).clickOnTheFoodToGetMoreDetailsAboutIt,
-                maxLines: 2,
-                style: Theme.of(context).textTheme.caption,
-              ),
-            ),
-            FoodsCarouselWidget(heroTag: 'menu_trending_food', foodsList: _con.trendingFoods),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 20),
+            //   child: SearchBarWidget(),
+            // ),
+            // ListTile(
+            //   dense: true,
+            //   contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            //   leading: Icon(
+            //     Icons.bookmark,
+            //     color: Theme.of(context).hintColor,
+            //   ),
+            //   title: Text(
+            //     S.of(context).featured_foods,
+            //     style: Theme.of(context).textTheme.headline4,
+            //   ),
+            //   subtitle: Text(
+            //     S.of(context).clickOnTheFoodToGetMoreDetailsAboutIt,
+            //     maxLines: 2,
+            //     style: Theme.of(context).textTheme.caption,
+            //   ),
+            // ),
+
+            //
+            // TENDERING FOOD
+            //
+
+            
+           // FoodsCarouselWidget(heroTag: 'menu_trending_food', foodsList: _con.trendingFoods),
+            
+
+            //All menuw text
             ListTile(
               dense: true,
               contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -112,6 +124,8 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
                 style: Theme.of(context).textTheme.caption,
               ),
             ),
+
+
             _con.categories.isEmpty
                 ? SizedBox(height: 90)
                 : Container(
@@ -127,6 +141,7 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
                           padding: const EdgeInsetsDirectional.only(start: 20),
                           child: RawChip(
                             elevation: 0,
+                            // Category name here
                             label: Text(_category.name),
                             labelStyle: _selected
                                 ? Theme.of(context).textTheme.bodyText2.merge(TextStyle(color: Theme.of(context).primaryColor))
@@ -139,6 +154,7 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
                             showCheckmark: false,
                             avatar: (_category.id == '0')
                                 ? null
+                                //if it's a all then no avatar image
                                 : (_category.image.url.toLowerCase().endsWith('.svg')
                                     ? SvgPicture.network(
                                         _category.image.url,

@@ -1,0 +1,22 @@
+Scaffold(
+      appBar: buildAppBar('Some cool appbar'),
+      body: Column(
+        children: [
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  PackageCard(),
+                  PackageCard(),
+                  PackageCard(),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            child: Text('Your super cool Footer'),
+            color: Colors.amber,
+          )
+        ],
+      ),
+    );

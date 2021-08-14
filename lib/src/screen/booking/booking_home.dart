@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/src/elements/SearchWidget.dart';
 import 'package:food_delivery_app/src/elements/ShoppingCartButtonWidget.dart';
+import 'package:food_delivery_app/src/pages/home.dart';
 import 'package:food_delivery_app/src/screen/booking/book_page.dart';
 import 'package:food_delivery_app/src/screen/booking/booking_details.dart';
 import 'package:food_delivery_app/src/screen/booking/booking_list_show.dart';
@@ -24,7 +25,14 @@ class _BookingHomeState extends State<BookingHome> {
         leading: new IconButton(
           icon: new Icon(Icons.arrow_back, color: Theme.of(context).hintColor),
           // onPressed: () => Navigator.of(context).pushNamed('/Details', arguments: RouteArgument(id: '0', param: _con.restaurant.id, heroTag: 'menu_tab')),
-          onPressed: () => Navigator.pop(context),
+         onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => HomeWidget()),
+            );
+  
+          },
         ),
         title: Text(
           '',

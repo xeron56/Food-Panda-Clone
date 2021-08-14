@@ -100,68 +100,68 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
     return Scaffold(
         key: widget.scaffoldKey,
         drawer: DrawerWidget(),
-        // bottomNavigationBar: Container(
-        //   height: 66,
-        //   decoration: BoxDecoration(
-        //     color: Theme.of(context).primaryColor,
-        //     boxShadow: [BoxShadow(color: Theme.of(context).hintColor.withOpacity(0.10), offset: Offset(0, -4), blurRadius: 10)],
-        //   ),
-        //   child: Row(
-        //     mainAxisAlignment: MainAxisAlignment.spaceAround,
-        //     children: [
-        //       IconButton(
-        //         icon: Icon(
-        //           Icons.store,
-        //           size: widget.currentTab == 0 ? 28 : 24,
-        //           color: widget.currentTab == 0 ? Theme.of(context).accentColor : Theme.of(context).focusColor,
-        //         ),
-        //         onPressed: () {
-        //           this._selectTab(0);
-        //         },
-        //       ),
-        //       IconButton(
-        //         icon: Icon(
-        //           Icons.chat,
-        //           size: widget.currentTab == 1 ? 28 : 24,
-        //           color: widget.currentTab == 1 ? Theme.of(context).accentColor : Theme.of(context).focusColor,
-        //         ),
-        //         onPressed: () {
-        //           this._selectTab(1);
-        //         },
-        //       ),
-        //       IconButton(
-        //         icon: Icon(
-        //           Icons.directions,
-        //           size: widget.currentTab == 2 ? 28 : 24,
-        //           color: widget.currentTab == 2 ? Theme.of(context).accentColor : Theme.of(context).focusColor,
-        //         ),
-        //         onPressed: () {
-        //           this._selectTab(2);
-        //         },
-        //       ),
+        bottomNavigationBar: Container(
+          height: 66,
+          decoration: BoxDecoration(
+            color: Theme.of(context).primaryColor,
+            boxShadow: [BoxShadow(color: Theme.of(context).hintColor.withOpacity(0.10), offset: Offset(0, -4), blurRadius: 10)],
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(
+                icon: Icon(
+                  Icons.store,
+                  size: widget.currentTab == 0 ? 28 : 24,
+                  color: widget.currentTab == 0 ? Theme.of(context).accentColor : Theme.of(context).focusColor,
+                ),
+                onPressed: () {
+                  this._selectTab(0);
+                },
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.chat,
+                  size: widget.currentTab == 1 ? 28 : 24,
+                  color: widget.currentTab == 1 ? Theme.of(context).accentColor : Theme.of(context).focusColor,
+                ),
+                onPressed: () {
+                  this._selectTab(1);
+                },
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.directions,
+                  size: widget.currentTab == 2 ? 28 : 24,
+                  color: widget.currentTab == 2 ? Theme.of(context).accentColor : Theme.of(context).focusColor,
+                ),
+                onPressed: () {
+                  this._selectTab(2);
+                },
+              ),
 
-        //       //restaurent menue button
-        //       FlatButton(
-        //         onPressed: () {
-        //           this._selectTab(3);
-        //         },
-        //         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        //         shape: StadiumBorder(),
-        //         color: Theme.of(context).accentColor,
-        //         child: Wrap(
-        //           spacing: 10,
-        //           children: [
-        //             Icon(Icons.restaurant, color: Theme.of(context).primaryColor),
-        //             Text(
-        //               S.of(context).menu,
-        //               style: TextStyle(color: Theme.of(context).primaryColor),
-        //             )
-        //           ],
-        //         ),
-        //       ),
-        //     ],
-        //   ),
-        // ),
+              //restaurent menue button
+              FlatButton(
+                onPressed: () {
+                  this._selectTab(3);
+                },
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                shape: StadiumBorder(),
+                color: Theme.of(context).accentColor,
+                child: Wrap(
+                  spacing: 10,
+                  children: [
+                    Icon(Icons.restaurant, color: Theme.of(context).primaryColor),
+                    Text(
+                      S.of(context).menu,
+                      style: TextStyle(color: Theme.of(context).primaryColor),
+                    )
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
         /*
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/src/screen/booking/book_page.dart';
 import 'package:food_delivery_app/src/screen/booking/booking_home.dart';
+import 'package:food_delivery_app/src/screen/orders/orders_home.dart';
 import 'package:food_delivery_app/src/screen/profile/my_profile.dart';
 import 'package:food_delivery_app/src/screen/profile/profile_menu.dart';
 
@@ -62,9 +63,10 @@ class _PagesWidgetState extends State<PagesWidget> {
               NotificationsWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
         case 1:
-          widget.currentPage = MapWidget(
-              parentScaffoldKey: widget.scaffoldKey,
-              routeArgument: widget.routeArgument);
+          // widget.currentPage = MapWidget(
+          //     parentScaffoldKey: widget.scaffoldKey,
+          //     routeArgument: widget.routeArgument);
+           widget.currentPage = OrderHome();
           break;
         case 2:
           widget.currentPage =
